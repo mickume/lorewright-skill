@@ -3,6 +3,7 @@
     "allow": [
       "WebFetch(domain:code.claude.com)",
       "Skill(lorewright)",
+      "Bash(dndig:*)",
       "Bash(mkdir:*)",
       "Bash(ls:*)"
     ],

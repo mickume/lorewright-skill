@@ -20,6 +20,14 @@ Use this checklist when beginning any new campaign project. Complete it *before*
 
 ---
 
+## Reference Materials
+
+- [ ] **Check for `references/` directory** — if present, read all `.md` files and note available `.pdf` files
+- [ ] **Markdown references absorbed** — setting lore, house rules, pantheon, factions, etc.
+- [ ] **PDF references cataloged** — note which books are available and what they cover for on-demand lookups during content creation
+
+---
+
 ## World & Setting
 
 - [ ] **Primary setting researched and selected** — official setting, homebrew, or adapted

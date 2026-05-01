@@ -100,6 +100,9 @@ campaigns/[campaign-name]/
 ├── locations.md                 # Key places with descriptions
 ├── factions.md                  # Organizations and their goals (optional)
 ├── timeline.md                  # Timeline of events in the campaign (optional)
+├── references/                  # Lore and rules reference materials
+│   ├── *.md                     # Markdown summaries (setting, house rules, pantheon, etc.)
+│   └── *.pdf                    # Source books, lore documents (read specific pages on demand)
 └── art/                         # Image prompts and artwork
     ├── 01_[npc-name].md         # NPC portrait prompts (numbered first)
     ├── 02_[npc-name].md         # Additional NPC prompts
@@ -154,6 +157,35 @@ Quality assurance for your work:
 Complete sample campaigns demonstrating all templates:
 
 - **[The Stolen Flame](examples/the-stolen-flame/)** - One-shot adventure showing all templates in action
+
+---
+
+## Reference Materials
+
+Campaigns can include a `references/` directory with lore, setting, and rules materials that ground the campaign in specific source content. Both markdown (`.md`) and PDF (`.pdf`) files are supported.
+
+### Markdown references
+Compact summaries of setting lore, house rules, pantheons, regional factions, or any background the campaign should draw from. These are read in full and provide the most reliable grounding for tone and consistency.
+
+### PDF references
+Source books, published adventures, or lore documents. PDFs are read on demand by specific page ranges (up to 20 pages per request). Use them for precise lookups — stat blocks, spell descriptions, setting details — rather than broad grounding.
+
+### How to use references
+
+1. **Place files in `campaigns/[campaign-name]/references/`**
+2. **Read markdown references early** — during Phase 1 (requirements gathering) and Phase 2 (framework), read all `.md` reference files to absorb setting context, tone, and constraints
+3. **Consult PDFs on demand** — when creating content that needs specific rules, stat blocks, or lore details, read the relevant pages from PDF references
+4. **Cite sources** — when content is drawn from a reference, note the source in DM notes (e.g., "See PHB p. 157" or "Per setting-overview.md")
+
+### Example references/ layout
+```
+references/
+├── setting-overview.md          # World, geography, major powers
+├── house-rules.md               # Table-specific rule modifications
+├── pantheon.md                  # Gods, domains, worship practices
+├── players-handbook.pdf         # Rules lookups (read specific pages)
+└── sword-coast-guide.pdf        # Setting lore (read specific pages)
+```
 
 ---
 

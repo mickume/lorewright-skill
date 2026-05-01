@@ -54,6 +54,7 @@ Questions to ask:
 
 **Use TaskCreate** to create a planning checklist:
 - [ ] Gather requirements
+- [ ] Read reference materials (if `references/` directory exists)
 - [ ] Complete research checklist ([campaign-research-checklist.md](../checklists/campaign-research-checklist.md))
 - [ ] Choose campaign type
 - [ ] Create campaign overview
@@ -65,6 +66,15 @@ Questions to ask:
 - [ ] Write briefing document
 - [ ] Create image prompts and generate art with dndig
 - [ ] Quality check
+
+### Step 1b: Read Reference Materials
+
+If the campaign has a `references/` directory, read its contents before proceeding:
+
+- **Markdown files (`.md`):** Read in full — these contain setting lore, house rules, pantheon details, and other grounding context that should inform all content creation
+- **PDF files (`.pdf`):** Note what's available. Read specific page ranges on demand during later phases when precise rules, stat blocks, or lore details are needed (up to 20 pages per request)
+
+This step ensures all generated content is consistent with the DM's chosen setting, rules, and lore.
 
 ### Step 2: Choose Campaign Type
 
@@ -425,6 +435,9 @@ campaigns/[campaign-name]/
 ├── npcs.md
 ├── locations.md
 ├── factions.md
+├── references/                  # (optional) Lore and rules reference materials
+│   ├── *.md
+│   └── *.pdf
 ├── art/
 │   ├── 01_[npc-name].md
 │   ├── 02_[scene-name].md
