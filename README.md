@@ -32,8 +32,12 @@ Then describe what you want to create — a full campaign, a one-shot adventure,
 
 Lorewright creates image prompts for campaign artwork (NPC portraits, scenes, maps). To generate the actual images, install [dndig](https://github.com/mickume/dndig):
 
+Requires Python 3.10+, `uv` and a [Google Gemini API key](https://aistudio.google.com/apikey).
+
+Install directly from the repository:
+
 ```bash
-pipx install dndig
+uv tool install git+https://github.com/mickume/dndig.git
 ```
 
 Then point it at a campaign's art directory:
