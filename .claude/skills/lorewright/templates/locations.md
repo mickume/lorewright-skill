@@ -20,7 +20,7 @@ These locations are central to the campaign and appear in multiple chapters.
 
 [2-3 paragraph description of the location. What is it? Why is it important? What's its role in the story?]
 
-![Location Name](art/location-name.jpg)
+![Location Name](art/images/location-name.jpg)
 
 #### Atmosphere & Mood
 
@@ -97,7 +97,7 @@ These locations are central to the campaign and appear in multiple chapters.
 
 #### Map
 
-![Location Name Map](art/location-name-map.jpg)
+![Location Name Map](art/images/location-name-map.jpg)
 
 [Text-based map or description if visual map not available]
 
@@ -220,7 +220,7 @@ Roll 1d6 when traveling between major locations:
 
 ## World Map
 
-![World Map](art/world-map.jpg)
+![World Map](art/images/world-map.jpg)
 
 [Text description of the overall geography and how locations relate to each other]
 

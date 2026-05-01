@@ -32,7 +32,7 @@ The party is traveling through the region and arrives at Redbrook seeking rest. 
 
 > You crest the final hill as the sun sinks toward the horizon, and the village of Redbrook spreads before you in the valley below. The village should be a welcoming sight after days of travel—but something is wrong. The streets are too quiet, too dark. No smoke rises from chimneys despite the evening chill. Villagers huddle in small groups in the central square, their faces drawn with worry. At the center of it all stands a stone temple, its doors thrown wide—but where you'd expect to see the warm glow of sacred flames, there is only darkness.
 
-![Redbrook at Dusk](art/redbrook-village.jpg)
+![Redbrook at Dusk](art/images/redbrook-village.jpg)
 
 ### DM Information
 
@@ -114,7 +114,7 @@ She provides:
 
 > The path through Thornwood Forest is well-worn but narrow, hemmed in by ancient oaks and thick thornbushes. Shafts of fading sunlight pierce the canopy, casting long shadows across the forest floor. The kobold tracks are clear here—disturbed leaves, broken twigs, the occasional small footprint in soft earth. You've been walking for about an hour when you hear it: high-pitched chittering and yipping voices ahead, speaking in Draconic.
 
-![Thornwood Forest Path](art/thornwood-ambush.jpg)
+![Thornwood Forest Path](art/images/thornwood-ambush.jpg)
 
 ### DM Information
 
@@ -192,7 +192,7 @@ If a kobold is captured, intimidated, or convinced to talk:
 
 > The forest thins as you climb into rockier terrain. Ahead, a jumble of boulders forms a natural maze at the base of a low hill. The air grows noticeably colder, carrying a faint musk of reptiles and damp stone. Somewhere ahead, you hear the echo of high-pitched voices and the drip of water.
 
-![Cave Entrance](art/cave-entrance.jpg)
+![Cave Entrance](art/images/cave-entrance.jpg)
 
 ### DM Information
 

@@ -285,33 +285,55 @@ For key locations, NPCs, and scenes. See [dndig-reference.md](../modules/dndig-r
 - Reference this file from every prompt's `instructions` field
 
 **10.2: Identify Visual Moments**
+- Major NPCs
 - Opening scenes
 - Important locations
-- Major NPCs
 - Climactic encounters
 
-**10.3: Write Prompts**
+**10.3: Write Prompts (NPCs First)**
+
+All prompt files use a numbered prefix (`01_`, `02_`, etc.). **NPCs are always numbered first** so their portraits are generated before any scene or encounter. When a later prompt features a previously generated NPC, add the NPC's image path to `references` in the frontmatter for visual continuity.
+
+- Create NPC portrait prompts first (`01_npc-name.md`, `02_npc-name.md`, ...)
+- Then locations (`03_location-name.md`, ...)
+- Then encounters/scenes — reference generated NPC images when applicable
 - Base on read-aloud descriptions
 - Include style guidance, composition, lighting, mood
 - Use appropriate aspect ratios per content type (see dndig reference)
 
-**Format:**
+**NPC portrait format:**
 ```markdown
 ---
-title: filename
+title: captain-harrow
+aspect_ratio: "2:3"
+resolution: 2K
+instructions: campaign-style.md
+---
+
+Detailed visual description of the NPC...
+```
+
+**Scene/encounter format (referencing NPC):**
+```markdown
+---
+title: ambush-at-the-docks
 aspect_ratio: "16:9"
 resolution: 2K
 instructions: campaign-style.md
 references:
-  - refs/style-ref.jpg
+  - images/captain-harrow_20240315_143022_1.png
 ---
 
-Detailed visual description based on scene...
+Captain Harrow stands at the edge of the pier, cutlass drawn...
 ```
 
 **10.4: Generate Images**
 ```bash
-dndig campaigns/[campaign-name]/art/[prompt-file].md 
+# All prompts in the art directory (NPCs processed first due to numbering)
+dndig campaigns/[campaign-name]/art/
+
+# Or a single prompt
+dndig campaigns/[campaign-name]/art/[prompt-file].md
 ```
 
 ### Step 11: Add Supporting Materials
@@ -404,8 +426,11 @@ campaigns/[campaign-name]/
 ├── locations.md
 ├── factions.md
 ├── art/
-│   ├── [image-prompts].md
-│   └── [generated images]
+│   ├── 01_[npc-name].md
+│   ├── 02_[scene-name].md
+│   ├── campaign-style.md
+│   └── images/
+│       └── [generated-images.jpg]
 └── [optional additional files]
 ```
 

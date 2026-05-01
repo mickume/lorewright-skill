@@ -64,7 +64,7 @@ party avoided the trap in Area 3, the golem is already active and hostile.
 
 ### 3. Image Placeholder
 ```markdown
-![Grand Hall](art/grand-hall.jpg)
+![Grand Hall](art/images/grand-hall.jpg)
 ```
 
 ### 4. DM Information
@@ -93,7 +93,7 @@ party avoided the trap in Area 3, the golem is already active and hostile.
 > is thick with dust and the faint smell of decay. Your footsteps echo in the
 > oppressive silence.
 
-![Grand Hall](art/grand-hall.jpg)
+![Grand Hall](art/images/grand-hall.jpg)
 
 This hall once served as the throne room of the ancient king. The carvings on the
 columns tell the story of his conquests (DC 12 History reveals this).
@@ -188,7 +188,7 @@ flowchart LR
 For detailed battle maps or location maps:
 
 ```markdown
-![Dungeon Level 1 Map](art/dungeon-level-1-map.jpg)
+![Dungeon Level 1 Map](art/images/dungeon-level-1-map.jpg)
 
 **Map Key:**
 - Green squares: Safe areas

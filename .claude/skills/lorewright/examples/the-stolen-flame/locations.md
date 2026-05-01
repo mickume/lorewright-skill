@@ -96,7 +96,7 @@ Sleetscale's lair. Ice forming on walls, small hoard of treasure, and the Eterna
 
 #### Map
 
-![Dragon's Lair Map](art/dragons-lair-map.jpg)
+![Dragon's Lair Map](art/images/dragons-lair-map.jpg)
 
 ```
 [1] Entrance

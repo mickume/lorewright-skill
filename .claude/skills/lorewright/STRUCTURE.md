@@ -103,10 +103,11 @@ Each chapter typically includes:
 - Very detailled and verbose description, it has inspire the player's imagination. It also serves as prompt for AI image generation.
 - Insert a placeholder link for a potential image.
 
-**Location/Scene Prompts**
-- Very detailled and verbose description, it has inspire the player's imagination, based on the description created for the DM.
-- Used to create artwork to illustrate the location/scene
-- An individual file markdown for each location/scene with the following format:
+**Art Prompts**
+- An individual markdown file per subject (NPC, location, scene, encounter)
+- All files use a numbered prefix: `01_name.md`, `02_name.md`, etc.
+- **NPCs are always numbered first** so portraits are generated before scenes/encounters
+- When a scene or encounter features a previously generated NPC, add the NPC's image path to `references` in the frontmatter for visual continuity
 
 ```markdown
 ---
@@ -114,6 +115,8 @@ title: location             # Output filename prefix (required)
 aspect_ratio: "4:3"         # Options: 16:9, 9:16, 1:1, 4:3, 3:4
 resolution: 1K              # Options: 1K, 2K, 4K
 instructions: [campaign]_instr.md  # Optional style instructions file
+references:                 # Optional — include generated NPC images for continuity
+  - images/npc-name_timestamp_1.png
 ---
 
 Your detailled and verbose description, it has to inspire the player's imagination, based on the description created for the DM.

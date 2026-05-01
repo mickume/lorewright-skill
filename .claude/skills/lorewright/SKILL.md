@@ -101,10 +101,12 @@ campaigns/[campaign-name]/
 ├── factions.md                  # Organizations and their goals (optional)
 ├── timeline.md                  # Timeline of events in the campaign (optional)
 └── art/                         # Image prompts and artwork
-    ├── [scene-name].md          # Image generation prompts for scenes
-    ├── [location-name].md       # Image generation prompts for locations/environment
-    ├── [npc-name].md            # Image generation prompts for unique NPCs
-    └── [generated-images.jpg]   # Actual artwork *.jpg (if generated)
+    ├── 01_[npc-name].md         # NPC portrait prompts (numbered first)
+    ├── 02_[npc-name].md         # Additional NPC prompts
+    ├── 03_[scene-name].md       # Scene/location prompts (numbered after NPCs)
+    ├── campaign-style.md        # Style instructions file
+    └── images/                  # Generated images (dndig output)
+        └── [generated-images.jpg]
 ```
 
 ---
@@ -372,11 +374,15 @@ See: [modules/world-building.md](modules/world-building.md), [templates/location
 
 ## Image Generation with dndig
 
-Use **dndig** (`dndig`) to generate campaign artwork from prompt files. See [dndig-reference.md](modules/dndig-reference.md) for complete documentation.
+Use **dndig** (`dndig`) to generate campaign artwork from prompt files or an entire directory. See [dndig-reference.md](modules/dndig-reference.md) for complete documentation.
 
 **Quick usage:**
 ```bash
+# Single prompt file
 dndig campaigns/my-campaign/art/throne-room.md
+
+# All prompts in a directory
+dndig campaigns/my-campaign/art/
 ```
 
 **Prompt file format:**
@@ -403,10 +409,23 @@ Include: composition, lighting, mood, style, atmosphere.
 - **Aspect ratios:** `1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`, `21:9`
 - **Resolutions:** `512px`, `1K`, `2K`, `4K`
 
+**Prompt naming and ordering:**
+
+All art prompt files are numbered with a running prefix (`01_`, `02_`, etc.). **NPCs are always numbered first** so their portraits are generated before scenes and encounters. When a scene or encounter features a previously generated NPC, add the NPC's image path to `references` in the prompt frontmatter for visual continuity.
+
+```
+art/
+├── 01_captain-harrow.md       # NPC — generated first
+├── 02_sister-vael.md          # NPC
+├── 03_harbor-district.md      # Location
+├── 04_ambush-at-docks.md      # Encounter — references 01's image
+└── images/                    # Generated images (dndig output)
+```
+
 **Create prompts for:**
+- Important NPCs and character portraits (`2:3` or `3:4` at `2K`) — **always first**
 - Key locations and scenes (`16:9` or `4:3` at `2K`)
-- Important NPCs and character portraits (`2:3` or `3:4` at `2K`)
-- Climactic encounters (`16:9` at `2K`)
+- Climactic encounters (`16:9` at `2K`) — reference NPC images when applicable
 - Maps and dungeons (`1:1` or `4:3` at `2K`+)
 - Items and artifacts (`1:1` at `1K`)
 
