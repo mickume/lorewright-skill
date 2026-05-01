@@ -106,7 +106,8 @@ At minimum, a campaign should have:
   - [ ] Chapters link to NPCs document
   - [ ] Chapters link to locations document
   - [ ] Chapters link to each other
-  - [ ] Artwork prompt documents exists for referenced artwork
+  - [ ] Every `![...](art/images/...)` image reference has a matching art prompt file in `art/`
+  - [ ] Every art prompt file (excluding style files) is referenced by at least one image embed in content
 
 - [ ] NPC references are accurate
   - [ ] NPCs appear in chapters where stated
@@ -117,6 +118,17 @@ At minimum, a campaign should have:
   - [ ] Locations appear in chapters where stated
   - [ ] Descriptions match between documents
   - [ ] Travel connections make sense
+
+### Cross-Linking (Navigation)
+
+- [ ] **Chapters:** First mention of each NPC links to `npcs.md#anchor`, first mention of each location links to `locations.md#anchor`, first mention of each faction links to `factions.md#anchor`
+- [ ] **npcs.md:** "First Appearance" fields link to `chapter-XX.md#scene-anchor`; "Location" fields link to `locations.md#anchor`; NPC relationships link to `#other-npc-anchor`
+- [ ] **locations.md:** "First Appearance" fields link to `chapter-XX.md#scene-anchor`; Notable NPCs link to `npcs.md#anchor`
+- [ ] **campaign-overview.md:** NPC and location names in tables/text link to their respective documents; chapter summaries link to chapter files
+- [ ] **factions.md:** NPC members link to `npcs.md#anchor`; rival/allied factions link to `#faction-anchor`; headquarters link to `locations.md#anchor`
+- [ ] **timeline.md:** Chapter titles link to chapter files; NPC and location names link to their documents
+- [ ] Scene "Connections" sections link to target scenes or chapters
+- [ ] No dead links (all anchors resolve to existing headings)
 
 ### Timeline and Continuity
 
@@ -308,13 +320,19 @@ For each chapter, check that:
 
 ## Polish Check
 
-### Image Prompts
+### Image Prompts & Integration
 
 - [ ] Key scenes have image prompts
 - [ ] Important locations have image prompts
 - [ ] Major NPCs have image prompts
 - [ ] Prompts are detailed and useful
 - [ ] Prompts include proper metadata
+- [ ] **Every art prompt file has at least one `![...](art/images/...)` reference in campaign content** (no orphaned prompts)
+- [ ] **Every `![...](art/images/...)` reference in content has a matching art prompt** in `art/` (no broken image links)
+- [ ] NPC portraits are placed after the NPC's appearance description in `npcs.md`
+- [ ] Scene/location images are placed after the read-aloud text in chapters and/or `locations.md`
+- [ ] Encounter images are placed after the encounter intro read-aloud text
+- [ ] Image paths point to actual files in `art/images/` (after generation)
 
 ### Supporting Materials
 

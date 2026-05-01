@@ -12,8 +12,8 @@ These NPCs are central to the campaign's story and appear in multiple chapters.
 
 **Role:** [Their role in the story - villain, ally, quest giver, etc.]
 **Race/Gender:** [e.g., Female Half-Elf]
-**Location:** [Where they're typically found]
-**First Appearance:** [Chapter X]
+**Location:** [Link to locations.md, e.g., [Redbrook Village](locations.md#redbrook-village)]
+**First Appearance:** [Link to chapter and scene, e.g., [Chapter 1, Scene 1](chapter-01.md#scene-1-darkness-over-redbrook)]
 
 #### Appearance
 [2-4 sentences with distinctive physical features. Make them memorable.]
@@ -43,8 +43,8 @@ These NPCs are central to the campaign's story and appear in multiple chapters.
 [What are they hiding? What don't they want the party to know?]
 
 #### Relationships
-- **[NPC Name]:** [How they relate to this other NPC]
-- **[Faction Name]:** [Their relationship to this faction]
+- **[NPC Name](#other-npc-anchor):** [How they relate to this other NPC — link to their section]
+- **[Faction Name](factions.md#faction-anchor):** [Their relationship to this faction]
 - **The Party:** [How they initially view the party; how this might change]
 
 #### Stat Block
@@ -83,8 +83,8 @@ These NPCs are important but appear less frequently or have smaller roles.
 
 **Role:** [Their role]
 **Race/Gender:** [Demographics]
-**Location:** [Where found]
-**First Appearance:** [Chapter X]
+**Location:** [Link to locations.md anchor]
+**First Appearance:** [Link to chapter and scene]
 
 #### Quick Description
 [1-2 sentence physical description]

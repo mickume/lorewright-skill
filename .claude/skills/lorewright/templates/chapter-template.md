@@ -15,8 +15,8 @@
 - [Secondary objective]
 - [Optional objective or side quest]
 
-**Key NPCs:** [List NPCs that appear this chapter]
-**Key Locations:** [List locations visited this chapter]
+**Key NPCs:** [Link to npcs.md anchors, e.g., [NPC Name](npcs.md#npc-name)]
+**Key Locations:** [Link to locations.md anchors, e.g., [Location](locations.md#location-name)]
 
 ---
 
@@ -88,14 +88,14 @@
 [What can be found or earned here]
 
 ### Connections
-- **To Scene 2:** [How to transition to the next scene]
-- **To [Other location]:** [Alternative paths]
+- **To [Scene 2](#scene-2-scene-name):** [How to transition to the next scene]
+- **To [Other location](locations.md#location-anchor):** [Alternative paths]
 
 ---
 
 ## Scene 2: [Scene Name]
 
-[Repeat the same structure as Scene 1]
+[Repeat the same structure as Scene 1. Link the first mention of each NPC to npcs.md and each location to locations.md — see [formatting-conventions.md](../modules/formatting-conventions.md#cross-references-and-navigation) for linking rules.]
 
 ### Introduction
 > [Read-aloud text]
@@ -115,7 +115,7 @@
 [Loot or rewards]
 
 ### Connections
-[Where players can go next]
+[Link to target scenes or chapters, e.g., [Scene 3](#scene-3-climactic-scene) or [Chapter 2](chapter-02.md)]
 
 ---
 

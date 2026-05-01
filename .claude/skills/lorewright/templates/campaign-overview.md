@@ -40,8 +40,8 @@
 
 | Name | Role | Location | Importance |
 |------|------|----------|------------|
-| [NPC Name] | [Their role] | [Where they are] | [Major/Supporting/Minor] |
-| [NPC Name] | [Their role] | [Where they are] | [Major/Supporting/Minor] |
+| [NPC Name](npcs.md#npc-anchor) | [Their role] | [Location](locations.md#location-anchor) | [Major/Supporting/Minor] |
+| [NPC Name](npcs.md#npc-anchor) | [Their role] | [Location](locations.md#location-anchor) | [Major/Supporting/Minor] |
 
 [See [npcs.md](npcs.md) for full NPC details]
 
@@ -51,8 +51,8 @@
 
 | Location | Type | Importance | First Appears |
 |----------|------|------------|---------------|
-| [Location] | [City/Dungeon/Wilderness] | [Major/Supporting] | [Chapter X] |
-| [Location] | [City/Dungeon/Wilderness] | [Major/Supporting] | [Chapter X] |
+| [Location](locations.md#location-anchor) | [City/Dungeon/Wilderness] | [Major/Supporting] | [Chapter X](chapter-XX.md) |
+| [Location](locations.md#location-anchor) | [City/Dungeon/Wilderness] | [Major/Supporting] | [Chapter X](chapter-XX.md) |
 
 [See [locations.md](locations.md) for full location details]
 
@@ -62,8 +62,8 @@
 
 | Faction | Alignment | Goal | Relationship to Party |
 |---------|-----------|------|----------------------|
-| [Faction] | [Alignment] | [Their goal] | [Ally/Enemy/Neutral] |
-| [Faction] | [Alignment] | [Their goal] | [Ally/Enemy/Neutral] |
+| [Faction](factions.md#faction-anchor) | [Alignment] | [Their goal] | [Ally/Enemy/Neutral] |
+| [Faction](factions.md#faction-anchor) | [Alignment] | [Their goal] | [Ally/Enemy/Neutral] |
 
 [See [factions.md](factions.md) for full faction details]
 
@@ -75,8 +75,8 @@
 **Session(s):** 1
 **Level:** [Starting level]
 **Summary:** [Brief summary of this chapter]
-**Key Locations:** [Location names]
-**Key NPCs:** [NPC names]
+**Key Locations:** [Location](locations.md#location-anchor), [Location](locations.md#location-anchor)
+**Key NPCs:** [NPC Name](npcs.md#npc-anchor), [NPC Name](npcs.md#npc-anchor)
 **Objectives:** [What players should accomplish]
 
 [See [chapter-01.md](chapter-01.md)]
@@ -85,8 +85,8 @@
 **Session(s):** 2
 **Level:** [Level for this chapter]
 **Summary:** [Brief summary of this chapter]
-**Key Locations:** [Location names]
-**Key NPCs:** [NPC names]
+**Key Locations:** [Location](locations.md#location-anchor), [Location](locations.md#location-anchor)
+**Key NPCs:** [NPC Name](npcs.md#npc-anchor), [NPC Name](npcs.md#npc-anchor)
 **Objectives:** [What players should accomplish]
 
 [See [chapter-02.md](chapter-02.md)]

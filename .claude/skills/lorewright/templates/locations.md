@@ -14,7 +14,7 @@ These locations are central to the campaign and appear in multiple chapters.
 **Size:** [Small/Medium/Large]
 **Population:** [If applicable]
 **Government:** [If applicable]
-**First Appearance:** [Chapter X]
+**First Appearance:** [Link to chapter and scene, e.g., [Chapter 1, Scene 3](chapter-01.md#scene-3-the-dragons-lair---entrance)]
 
 #### Overview
 
@@ -59,8 +59,8 @@ These locations are central to the campaign and appear in multiple chapters.
 
 | Name | Role | Location Within | Notes |
 |------|------|----------------|--------|
-| [NPC] | [Role] | [Specific area] | [Key info] |
-| [NPC] | [Role] | [Specific area] | [Key info] |
+| [NPC Name](npcs.md#npc-anchor) | [Role] | [Specific area] | [Key info] |
+| [NPC Name](npcs.md#npc-anchor) | [Role] | [Specific area] | [Key info] |
 
 [See [npcs.md](npcs.md) for full NPC details]
 
@@ -129,7 +129,7 @@ These locations are important but less central to the campaign.
 ### [Location Name]
 
 **Type:** [Type]
-**First Appearance:** [Chapter X]
+**First Appearance:** [Link to chapter and scene]
 
 #### Quick Description
 
@@ -140,7 +140,7 @@ These locations are important but less central to the campaign.
 - [Important feature 2]
 
 #### Notable NPCs
-- [NPC Name] - [Role]
+- [NPC Name](npcs.md#npc-anchor) - [Role]
 
 #### What Players Can Do Here
 - [Activity or service]

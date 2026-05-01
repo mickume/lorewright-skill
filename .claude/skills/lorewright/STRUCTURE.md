@@ -101,13 +101,15 @@ Each chapter typically includes:
 
 **Location/Scene Description**
 - Very detailled and verbose description, it has inspire the player's imagination. It also serves as prompt for AI image generation.
-- Insert a placeholder link for a potential image.
+- Insert an image reference (`![Alt Text](art/images/filename.png)`) immediately after the read-aloud text. Before generation, use the prompt's `title` as a placeholder filename; after generation, update to the actual filename.
 
 **Art Prompts**
 - An individual markdown file per subject (NPC, location, scene, encounter)
 - All files use a numbered prefix: `01_name.md`, `02_name.md`, etc.
 - **NPCs are always numbered first** so portraits are generated before scenes/encounters
 - When a scene or encounter features a previously generated NPC, add the NPC's image path to `references` in the frontmatter for visual continuity
+- **Every art prompt must be referenced** by at least one `![...](art/images/...)` embed in the campaign content (chapters, npcs.md, or locations.md)
+- **Every image embed in content must have a matching art prompt** — no image references without a corresponding prompt file
 
 ```markdown
 ---
@@ -121,6 +123,12 @@ references:                 # Optional — include generated NPC images for cont
 
 Your detailled and verbose description, it has to inspire the player's imagination, based on the description created for the DM.
 ```
+
+**Image Placement:**
+- **NPC portraits:** after the appearance description in `npcs.md`
+- **Scene/location images:** after the read-aloud text in chapters and/or `locations.md`
+- **Encounter images:** after the encounter intro read-aloud text in chapters
+- **Maps:** in the map section of the relevant location
 
 **Maps**
 - Very detailled and verbose description, it has inspire the player's imagination. It also serves as prompt for AI image generation.
@@ -138,6 +146,18 @@ Your detailled and verbose description, it has to inspire the player's imaginati
 - DM tips
 - Historical/lore information
 
-## Other conventions
+## Cross-Linking Conventions
 
-In order to help navigating the documents and to support potential HTML/pdf/ebook export, insert markdown links between documents or between sections within a document.
+Campaign documents should be richly cross-linked to support navigation in both raw markdown and HTML/PDF/ebook exports (via lorepages). Follow these rules:
+
+**First-mention rule:** In each chapter, link the first mention of every named NPC to `npcs.md#anchor`, every named location to `locations.md#anchor`, and every faction to `factions.md#anchor`. Subsequent mentions in the same chapter do not need links.
+
+**Metadata fields:** "First Appearance", "Location", and "Relationships" fields in `npcs.md`, `locations.md`, and `factions.md` should always be links to the target document and anchor.
+
+**Scene transitions:** "Connections" sections at the end of each scene should link to the target scene or chapter (e.g., `[Scene 2](#scene-2-ambush-in-thornwood)` or `[Chapter 2](chapter-02.md)`).
+
+**Tables:** NPC and location names in overview tables (campaign-overview.md, factions.md, locations.md) should link to their detailed entries.
+
+**Read-aloud text:** Do not add links inside blockquote (`>`) read-aloud text — keep it clean for the DM to read aloud.
+
+See [formatting-conventions.md](modules/formatting-conventions.md#cross-references-and-navigation) for the complete linking reference.

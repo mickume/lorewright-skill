@@ -365,6 +365,26 @@ dndig campaigns/[campaign-name]/art/
 dndig campaigns/[campaign-name]/art/[prompt-file].md
 ```
 
+**10.5: Insert Image References into Content**
+
+After generating images, go back through the campaign documents and ensure every generated image is embedded at the right place. This step closes the loop between art creation and campaign content.
+
+For each art prompt file:
+1. Identify the corresponding location in the campaign text (chapter, npcs.md, or locations.md)
+2. Insert or update the `![Alt Text](art/images/filename.png)` reference using the actual generated filename
+3. Follow the placement rules from [formatting-conventions.md](../modules/formatting-conventions.md#image-integration):
+   - **NPC portraits** → after the appearance description in `npcs.md`
+   - **Scene/location images** → after the read-aloud text in the chapter or `locations.md`
+   - **Encounter images** → after the encounter intro in the chapter
+   - **Maps** → in the map section of the location
+
+**10.6: Verify Image Integration**
+
+Cross-check that:
+- Every art prompt file (excluding `campaign-style.md`) has at least one `![...](art/images/...)` reference in the campaign content
+- Every `![...](art/images/...)` reference in chapters, npcs.md, and locations.md has a corresponding art prompt in `art/`
+- All image paths point to files that exist in `art/images/`
+
 ### Step 11: Add Supporting Materials
 
 **11.1: Handouts** (optional)

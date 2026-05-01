@@ -272,6 +272,13 @@ references/
 - Include all required sections
 - Match the style of examples
 
+**Integrate All Artwork into Content**
+- Every art prompt in `art/` must have a matching `![...](art/images/...)` reference in the campaign text
+- Every image reference in chapters, npcs.md, or locations.md must have a matching art prompt
+- Place NPC portraits after appearance descriptions, scene images after read-aloud text
+- After running dndig, update image references to use actual generated filenames
+- See [formatting-conventions.md](modules/formatting-conventions.md#image-integration) for placement rules
+
 ### Never Do This
 
 **Don't Railroad Players**
@@ -344,7 +351,7 @@ Follow conventions in [modules/formatting-conventions.md](modules/formatting-con
 
 **Stat Blocks:** Reference Monster Manual when possible, or provide custom stats
 
-**Cross-References:** Use markdown links: `[Chapter 2](chapter-02.md)` or `[NPCs](npcs.md#npc-name)`
+**Cross-References:** Link the first mention of every named NPC, location, and faction in each chapter to their entry in the roster document (e.g., `[Elder Mira](npcs.md#elder-mira-thorne)`). Link "First Appearance" and "Location" metadata fields in npcs.md and locations.md back to chapter anchors. See [formatting-conventions.md](modules/formatting-conventions.md#cross-references-and-navigation) for complete rules.
 
 **Image Prompts:** Create in `art/` folder with proper metadata
 

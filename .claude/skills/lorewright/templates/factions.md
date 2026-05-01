@@ -54,8 +54,8 @@ These factions are central to the campaign's conflicts and politics.
 
 | Name | Rank/Role | Loyalty | Notes |
 |------|-----------|---------|-------|
-| [NPC] | [Role] | [Loyal/Ambitious/Conflicted] | [Key info] |
-| [NPC] | [Role] | [Loyalty level] | [Key info] |
+| [NPC](npcs.md#npc-anchor) | [Role] | [Loyal/Ambitious/Conflicted] | [Key info] |
+| [NPC](npcs.md#npc-anchor) | [Role] | [Loyalty level] | [Key info] |
 
 [See [npcs.md](npcs.md) for full NPC details]
 
@@ -97,8 +97,8 @@ These factions are central to the campaign's conflicts and politics.
 
 | Faction | Relationship | Status | Notes |
 |---------|--------------|--------|-------|
-| [Faction] | [Allied/Enemy/Neutral/Complex] | [Current status] | [Key info] |
-| [Faction] | [Relationship type] | [Status] | [Key info] |
+| [Faction](#other-faction-anchor) | [Allied/Enemy/Neutral/Complex] | [Current status] | [Key info] |
+| [Faction](#other-faction-anchor) | [Relationship type] | [Status] | [Key info] |
 
 #### Relationship with the Party
 
