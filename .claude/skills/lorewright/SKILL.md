@@ -14,10 +14,11 @@ lorewright is a specialized skill designed to assist Dungeon Masters and creativ
 ### For New Campaigns
 
 1. **Use TaskCreate** immediately to create a planning checklist
-2. **Follow the workflow:** [workflows/campaign-creation-workflow.md](workflows/campaign-creation-workflow.md)
-3. **Use AskUserQuestion** to gather requirements if not provided
-4. **Use templates:** All templates are in [templates/](templates/)
-5. **Quality check:** Use [checklists/campaign-quality-checklist.md](checklists/campaign-quality-checklist.md) when done
+2. **Create the directory structure** — run `mkdir -p campaigns/[name]/{references,art/images,changelog}` before writing any files
+3. **Follow the workflow:** [workflows/campaign-creation-workflow.md](workflows/campaign-creation-workflow.md)
+4. **Use AskUserQuestion** to gather requirements if not provided
+5. **Use templates:** All templates are in [templates/](templates/)
+6. **Quality check:** Use [checklists/campaign-quality-checklist.md](checklists/campaign-quality-checklist.md) when done
 
 ### For Updating Existing Campaigns
 

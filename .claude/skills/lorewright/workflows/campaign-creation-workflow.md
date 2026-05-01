@@ -91,6 +91,25 @@ Based on requirements, recommend a campaign type (see [modules/campaign-types.md
 
 ## Phase 2: Campaign Framework
 
+### Step 2b: Create Campaign Directory Structure
+
+Before writing any files, create the campaign directory structure:
+
+```bash
+mkdir -p campaigns/[campaign-name]/{references,art/images,changelog}
+```
+
+This creates:
+```
+campaigns/[campaign-name]/
+├── references/       # Lore and rules reference materials (.md, .pdf)
+├── art/
+│   └── images/       # Generated images (dndig output)
+└── changelog/        # Documented changes
+```
+
+Campaign files (`campaign-overview.md`, chapters, `npcs.md`, etc.) are written directly into the campaign root as they are created in subsequent steps.
+
 ### Step 3: Create Campaign Overview
 
 Using [templates/campaign-overview.md](../templates/campaign-overview.md):
