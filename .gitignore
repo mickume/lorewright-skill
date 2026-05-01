@@ -2,3 +2,13 @@
 *.jpg
 *.jpeg
 *.gif
+
+# lorepages output
+_site/
+_site-*/
+
+# Python
+__pycache__/
+*.egg-info/
+dist/
+.venv/
