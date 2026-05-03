@@ -376,3 +376,70 @@ Ask yourself what Mercer, Mulligan, or Iyengar would do — then ask yourself wh
 The rules exist to serve the story. The story exists to serve the players. The players exist to surprise you.
 
 **Let them.**
+
+## 11. Working with Git and Other Tools
+
+- **Commit discipline:** only commit files relevant to the current change.
+- **Never add `Co-Authored-By` lines.** No AI attribution in commits — ever.
+
+### lorepages — Static Site Generator
+
+`lorepages` converts a campaign directory into a navigable HTML website. It understands the campaign file conventions (chapters, NPCs, locations, factions, etc.) and produces a themed, interlinked site that a DM can browse at the table or share with players.
+
+```bash
+# Build the full DM site (includes spoilers, DM notes, secrets)
+lorepages build campaigns/my-campaign/
+
+# Build a player-safe version (strips DM-only content)
+lorepages build campaigns/my-campaign/ --mode player
+
+# Specify a custom output directory
+lorepages build campaigns/my-campaign/ -o /tmp/my-campaign-site/
+
+# Use a different theme
+lorepages build campaigns/my-campaign/ --theme parchment
+
+# Set a base URL for deployment
+lorepages build campaigns/my-campaign/ --base-url /campaigns/my-campaign/
+```
+
+**Key options:**
+
+| Flag | Description | Default |
+|------|-------------|---------|
+| `-o, --output-dir DIR` | Where to write the generated site | `<campaign-dir>/_site/` |
+| `--mode {dm,player}` | `dm` includes all content; `player` strips spoilers | `dm` |
+| `--theme NAME` | Theme name or path to custom theme directory | built-in default |
+| `--base-url URL` | Base URL prefix for all links | `/` |
+| `-v, --verbose` | Verbose output during build | off |
+
+The output lands in `_site/` inside the campaign directory by default. Open `index.html` in a browser to preview.
+
+### dndig — AI Image Generation
+
+`dndig` generates campaign artwork from markdown prompt files using Google's Gemini API. It takes a single prompt file or an entire directory and produces images for NPC portraits, location scenes, encounters, and maps.
+
+```bash
+# Generate all art for a campaign (processes files in numbered order)
+dndig campaigns/my-campaign/art/ -v
+
+# Generate a single image
+dndig campaigns/my-campaign/art/01_captain-harrow.md
+
+# Quick low-res drafts for iteration
+dndig campaigns/my-campaign/art/01_captain-harrow.md -o drafts/
+```
+
+**Key options:**
+
+| Flag | Description | Default |
+|------|-------------|---------|
+| `-o, --output-dir DIR` | Output directory for generated images | `art/images` |
+| `-w, --workers N` | Concurrent workers for batch processing | `4` |
+| `-v, --verbose` | Progress bar and verbose output | off |
+| `--api-key KEY` | Gemini API key (overrides `GEMINI_API_KEY` env var) | from env |
+
+**Requires:** `GEMINI_API_KEY` environment variable set.
+
+Prompt files are markdown with YAML frontmatter placed in the campaign's `art/` directory. NPCs are numbered first (`01_`, `02_`, ...) so their portraits are generated before scenes that reference them. See [dndig-reference.md](/.claude/skills/lorewright/modules/dndig-reference.md) for full prompt format, aspect ratios, and campaign art integration patterns.
+
