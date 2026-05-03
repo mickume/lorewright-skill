@@ -9,6 +9,7 @@ This workflow guides you through creating a complete D&D campaign from initial c
 ### Step 1: Collect Basic Information
 
 **If the DM provides a briefing document**, extract:
+- Game system (D&D 5e, Daggerheart, Pathfinder 2e, etc.)
 - Story or plot hook
 - Campaign length (one-shot, short arc, long campaign)
 - Starting level and number of players
@@ -20,30 +21,36 @@ This workflow guides you through creating a complete D&D campaign from initial c
 
 ```
 Questions to ask:
-1. What's your core concept or story idea?
+1. What game system are you using?
+   - D&D 5e (2014 or 2024 revision)
+   - Daggerheart
+   - Pathfinder 2e
+   - Other (specify)
+
+2. What's your core concept or story idea?
    - Epic quest to stop an evil
    - Political intrigue
    - Dungeon crawl
    - Exploration-focused
    - Mystery investigation
 
-2. How long should this campaign be?
+3. How long should this campaign be?
    - One-shot (single session)
    - Short (3-5 sessions)
    - Medium (6-12 sessions)
    - Long (13+ sessions)
 
-3. What's the player starting level and party size?
-   - Level range: 1-20
+4. What's the player starting level and party size?
+   - Level range depends on system
    - Party size: typically 3-6 players
 
-4. What's the setting/backdrop?
-   - Classic D&D (Forgotten Realms, Greyhawk, etc.)
+5. What's the setting/backdrop?
+   - Published setting (Forgotten Realms, Golarion, etc.)
    - Homebrew fantasy world
    - Sci-fi or modern
-   - Specific published setting
+   - Other
 
-5. What's the tone?
+6. What's the tone?
    - Heroic & epic
    - Dark & serious
    - Humorous & lighthearted
@@ -52,12 +59,15 @@ Questions to ask:
    - Adult-themed/NSFW
 ```
 
+The game system determines stat block format, encounter math, skill/ability references, and mechanical terminology used throughout the campaign. All generated content should be consistent with the chosen system's conventions.
+
 **Use TaskCreate** to create a planning checklist:
 - [ ] Gather requirements
 - [ ] Read reference materials (if `references/` directory exists)
 - [ ] Complete research checklist ([campaign-research-checklist.md](../checklists/campaign-research-checklist.md))
 - [ ] Choose campaign type
 - [ ] Create campaign overview
+- [ ] Refine campaign concept with author (1-2 iterations)
 - [ ] Design chapters
 - [ ] Create a timeline of events in the chapters
 - [ ] Detail NPCs
@@ -171,6 +181,65 @@ Following [modules/world-building.md](../modules/world-building.md):
 - For complex campaigns, create 2-4 factions
 - Define their goals and conflicts
 - Show how they interact with each other
+
+---
+
+## Phase 2b: Creative Refinement
+
+Before investing time in detailed chapter writing, pause and present the campaign concept back to the author for collaborative refinement. This phase ensures the author's vision is fully captured and that the creative foundation is solid before building on it.
+
+**Run 1-2 refinement iterations.** Each iteration follows the same structure: present, discuss, revise.
+
+### Step 4b: Present the Campaign Concept
+
+Summarize what has been established so far in a clear, concise pitch:
+
+- **Setting & Tone** — the world, era, and atmosphere in a few sentences
+- **Central Conflict** — what drives the story; the core tension
+- **Plot Arc** — the major story beats from hook to climax to resolution
+- **Key NPCs** — the 3-5 most important characters: who they are, what they want, and why they matter
+- **Narrative Themes** — what the campaign is really *about* beneath the adventure
+- **Player Experience** — what the players will *feel* and *do* at the table; the kinds of choices they'll face
+
+Frame this as a conversation, not a deliverable. The goal is to surface assumptions and invite the author to push back, redirect, or expand.
+
+### Step 4c: Solicit Focused Feedback
+
+Use AskUserQuestion to guide the discussion. Ask about areas where author input matters most:
+
+```
+Refinement questions (adapt to what's relevant):
+
+1. Does this plot arc feel right? Any beats you'd shift, cut, or add?
+2. Do these NPCs land? Anyone missing — a rival, mentor, wildcard?
+3. Is the tone what you had in mind, or should we push it darker / lighter / weirder?
+4. Are there themes or narrative threads you want woven in?
+5. Anything that feels off, generic, or not quite *yours*?
+```
+
+Don't ask all of these at once — pick 2-3 that matter most given what was just presented.
+
+### Step 4d: Revise the Framework
+
+Based on the author's feedback:
+
+1. Update `campaign-overview.md` with any changes to plot, NPCs, setting, or tone
+2. Revise `chapters-summary.md` if the story structure shifted
+3. Adjust NPC concepts, faction dynamics, or location plans as needed
+4. Note any new constraints or creative direction the author introduced
+
+### Step 4e: Confirm and Move Forward
+
+After 1-2 iterations, confirm alignment before proceeding:
+
+```
+Confirmation question:
+"Are you happy with the overall direction — setting, plot, characters, tone —
+or is there anything else you'd like to adjust before we start writing the
+detailed chapters?"
+```
+
+Only proceed to Phase 3 once the author confirms they're satisfied with the creative foundation. If the author raises new concerns, do another refinement pass.
 
 ---
 
@@ -517,11 +586,12 @@ Provide the DM with:
 
 **Don't try to perfect everything at once:**
 1. Complete framework (Phases 1-2)
-2. Write first chapter in detail
-3. Get DM feedback
-4. Adjust approach for remaining chapters
-5. Detail remaining chapters
-6. Polish and quality check
+2. Refine the concept with the author (Phase 2b) — get alignment on setting, plot, NPCs, and tone before writing details
+3. Write first chapter in detail
+4. Get DM feedback on chapter style and depth
+5. Adjust approach for remaining chapters
+6. Detail remaining chapters
+7. Polish and quality check
 
 ### Use Todo List
 
