@@ -35,7 +35,7 @@
 >
 > The light is the first thing that changes. The prismatic patterns the matrix scatters across the Ashlands -- those fragments of color that made the wasteland almost beautiful -- dim. Not extinguished. Eclipsed. Something is between you and the horizon.
 >
-> You see them on the eastern approach. A column of figures, dark against the amber sky, moving with purpose across the ash. At their head, a woman walks with the unhurried certainty of someone who believes history is on her side. She does not run. She does not need to. She has been walking toward this moment for years.
+> You see them on the western approach. A column of figures, dark against the amber sky, moving with purpose across the ash. At their head, a woman walks with the unhurried certainty of someone who believes history is on her side. She does not run. She does not need to. She has been walking toward this moment for years.
 >
 > She carries something in her right hand. Even at this distance, the crystal matrix reacts -- a shudder in its rhythm, a stutter in its light, as if the heart skipped a beat.
 
@@ -45,7 +45,9 @@
 
 This is the campaign's most important social encounter. Everything that follows depends on how this conversation unfolds. Sera Mourne has arrived to do what she believes is necessary, and she is willing to talk first -- not because she doubts herself, but because she respects what the party has accomplished. She wants to be understood, not just obeyed.
 
-**Sera's Forces:** She has 6 Unraveler soldiers (Veterans, MM p.350) and 2 Channelers (Mages, MM p.347) with her. They hold position at the Pylon's base while Sera approaches the entrance alone.
+**Sera's Timeline:** Her letter in Chapter 4 estimated arrival at the Pylon "within eight days" -- written six days before the party found it, leaving roughly two days. But the Thinny storm that struck Loom also tore across Sera's route. Her column was forced into a multi-day detour through stable terrain, and the Resonance Key required recalibration after exposure to the storm's reality warps. She arrives on Day 11--12, roughly four days later than her original estimate.
+
+**Sera's Forces:** She has 6 Unraveler soldiers (Veterans, MM p.350) and 2 Channelers (Mages, MM p.347) with her. They hold position at the Pylon's base while Sera approaches the entrance alone. Dace's earlier estimate of 15--20 soldiers was accurate when he left Sera's main force, but the same Thinny storm that delayed Sera tore through their column -- she lost nearly half her soldiers to reality warps and desertions in the aftermath. The force that arrives is what survived.
 
 **The Guardians:** The Pylon Guardians from Chapter 6 still control the entrance. They will not admit Sera unless the party deactivates them or she uses a bypass code she obtained from the Old Ones' records.
 

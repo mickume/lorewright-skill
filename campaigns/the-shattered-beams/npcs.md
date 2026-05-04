@@ -117,7 +117,7 @@ She is not a sadist. She does not enjoy the Breakers' suffering. But she has dec
 #### Relationships
 - **[Aldric Vane](#aldric-vane):** Former mentor. She considers his departure a betrayal — he showed her the truth and then lacked the courage to act on it.
 - **[Commander Dace](#commander-dace):** Her most trusted lieutenant. She relies on his pragmatism and loyalty. If he turns against her, it devastates her.
-- **[Wren](#wren):** She doesn't know Wren by name. The Breakers are numbers to her — not by choice, but by necessity. If forced to confront Wren as a person, her emotional armor cracks.
+- **[Wren](#wren):** The one Breaker she couldn't reduce to a number. She held Wren's hand during the connection procedure and has never forgotten. The other Breakers are numbers to her — not by choice, but by necessity — but Wren is a name, a face, a sixteen-year-old girl she fed to a machine. If someone forces her to confront what she did to Wren specifically, her emotional armor cracks.
 - **[The Covenant of the Pylon](factions.md#the-covenant-of-the-pylon):** Former home. She sees them as cowards clinging to a broken system.
 - **The Party:** She respects them — the Constant chose them for a reason. She genuinely wishes they would join her cause.
 

@@ -408,10 +408,15 @@ Aldric leads the PCs back inside and presses supplies into their hands:
 - 10 days of rations (dried meat, hardtack, sealed water -- enough for a party of 4)
 - An outdated map of the Ashlands, hand-drawn, with a route to Loom marked in red ink. Annotations in Aldric's handwriting note hazards: *"Temporal eddies -- stay on the road"* and *"Skyship wreckage -- possible salvage"* and *"DO NOT APPROACH"* over a region marked with a skull
 - A **Beam-Shard Crystal** -- a small, rough-cut crystal that fits in a palm. It pulses with a faint inner light, rhythmic as a heartbeat
+- A **Communication Crystal** -- a flat, disc-shaped crystal etched with concentric rings. Aldric keeps its twin. Holding it and speaking Aldric's name allows a brief two-way conversation (functions as *Sending*, once per day)
 
 > Aldric places the crystal in the nearest PC's hand and closes their fingers around it.
 >
 > "This is a piece of the Beam's resonance. Crude. I made it years ago. It glows brighter the closer you are to an active Beam -- or to anything connected to one. Follow the light. It won't lead you wrong."
+>
+> He presses a second crystal into another PC's palm -- flat, disc-shaped, warm. Its surface is etched with concentric rings that catch the light.
+>
+> "And this. Hold it. Say my name. You'll hear me, and I'll hear you. Once a day, no more -- the resonance can't sustain it. But if you need me..." He trails off. The implication is clear: he expects them to need him.
 >
 > He straightens. The trembling in his hands stops -- or he forces it to stop.
 >

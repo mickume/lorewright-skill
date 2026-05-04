@@ -293,7 +293,7 @@ The stairs to Level 3 descend into cold air and the smell of ozone and unwashed 
 ### NPC: Wren
 
 **[Wren](npcs.md#wren)**
-- **Race/Gender:** Human female, late teens or early twenties
+- **Race/Gender:** Human female, mid to late teens
 - **Appearance:** Gaunt to the point of skeletal. Shaved head (the tendrils require direct scalp contact). Skin the color of old paper. Dark circles beneath luminous grey eyes that seem too large for her face. The crystalline tendrils at her temples have left raw, inflamed marks where they interface with her skin. Her hands, resting on the chair's arms, are thin enough to see the tendons move. She wears a shapeless grey shift, stained and worn.
 - **Personality:** Wren is still *here* -- present, aware, fighting -- and that is both her strength and her tragedy. She knows exactly what is happening to her. She knows what the machine does, how it works, what it costs. She knows the consequences of her own release. She has had weeks to contemplate all of it, strapped into a chair, unable to move, while her mind is slowly eaten.
 - **Speech:** Halting. Words come in clusters, separated by pauses where she gathers the strength to continue. She drifts between lucidity and a trance-like state where her eyes go distant and her voice takes on a resonant quality -- these are moments when the machine pulls her back toward the Beam, and she has to fight free. Sometimes she finishes others' sentences before they speak them. Not to be impressive -- she simply can't always tell the difference between what someone has said and what they're about to say.
@@ -302,7 +302,7 @@ The stairs to Level 3 descend into cold air and the smell of ozone and unwashed 
   - The machine's function and the consequences of disruption (she has overheard the Channeler discussing it).
   - The names and fates of the other Breakers. She has been aware of them, psychically, for weeks. She felt the three who died. "They just... went quiet. Like a candle. One moment they were there. Then they... weren't."
   - The Beam is weakening. She can feel it fraying. "It sounds like a string about to snap. The note gets higher and higher and thinner and thinner and then..."
-  - Something is coming from the west. A storm. A Thinny storm. She can feel it gathering, drawn by the disruption the station is causing.
+  - Something is coming from the east. A storm. A Thinny storm. She can feel it gathering, drawn by the disruption the station is causing.
 - **What She Wants:** Freedom. She knows the cost. She has calculated the odds. She has spent weeks doing nothing but calculating the odds. And she has decided: "I would rather die free than live as... *this*."
 
 ### The Conversation with Wren
@@ -518,7 +518,7 @@ If Wren is freed (by any method), she accompanies the party. She is physically w
 >
 > Wren sits near the fire, wrapped in a borrowed blanket, eating slowly. She holds each bite in her mouth for a long time, as if reminding herself what food tastes like. The Beam-Shard Amulet, if someone is wearing it, pulses faintly -- a slow, steady rhythm that matches the distant Beam's resonance. A heartbeat. Weakening, but still there.
 >
-> "The storm," Wren says, not looking up from the fire. "It'll hit Loom in... two days. Maybe less." She looks west, where the horizon carries a shimmer that shouldn't be there -- a luminous wrongness, like heat haze in winter. "The people there. Elder Soraya. The Covenant cell. They don't have time to evacuate on their own."
+> "The storm," Wren says, not looking up from the fire. "It'll hit Loom in... two days. Maybe less." She looks north, toward the city, where the horizon carries a shimmer that shouldn't be there -- a luminous wrongness, like heat haze in winter. "The people there. Elder Soraya. The Covenant cell. They don't have time to evacuate on their own."
 >
 > She looks east. Where the Eld Pylon of Keth waits. Where the Threadcutter is heading. Where the fifth Beam is anchored.
 >

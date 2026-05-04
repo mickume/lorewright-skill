@@ -593,7 +593,7 @@ When preparations are complete and the party settles in -- whether for a long re
 >
 > Now it shows movement.
 >
-> A cluster of contacts, approaching from the west. Moving at a steady march pace. Twenty, maybe more. And at the center of the formation, one contact that burns brighter than the others -- a resonance signature that the Pylon's sensors flag with a symbol Moth translates as:
+> A cluster of contacts, approaching from the west. Moving at a steady march pace. A dozen, maybe fewer -- the storm-scarred terrain makes the sensor image flicker and ghost. And at the center of the formation, one contact that burns brighter than the others -- a resonance signature that the Pylon's sensors flag with a symbol Moth translates as:
 >
 > *"Threat. Critical."*
 
