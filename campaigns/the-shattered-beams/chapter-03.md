@@ -246,10 +246,10 @@ Behind a shelf of dried mushrooms, a trapdoor leads to Jorin's real operation: a
 **What Jorin Provides:**
 
 **On Breaker Station Terminus:**
-- **Location:** Half a day's travel south through the Ashlands. Built into a collapsed mesa — the entrance is a reinforced tunnel mouth disguised as a natural cave.
+- **Location:** Half a day's travel south through the Ashlands. Built into a hillside — the entrance is a reinforced metal door disguised as a rocky outcropping.
 - **Layout:** Three levels, descending. Level 1 is barracks and storage. Level 2 is the processing level — magitech systems, power conduits, the machinery that channels psychic energy. Level 3 is the Breaker Chamber — the captive psychics, strapped into magitech chairs, their minds weaponized against the Beam.
-- **Defenses:** Unraveler soldiers — Jorin estimates 12-15, rotating in shifts of 4-5. At least one Channeler (an Unraveler mage) on each level. Magitech traps on the processing level — proximity-triggered energy discharges. The station commander is a hard case named Sergeant Dray — competent, loyal to the Threadcutter, not cruel but not merciful.
-- **The Breakers:** Four captive psychics, all civilians taken from settlements across the region. They've been in the chairs for weeks to months. They're semiconscious, in pain, and their psychic energy is being siphoned continuously.
+- **Defenses:** Unraveler soldiers — Jorin estimates 12-15, rotating in shifts of 4-5. At least one Channeler (an Unraveler mage) on each level. Magitech traps on the processing level — proximity-triggered energy discharges. The station commander is a hard case named Commander Vekk — competent, loyal to the Threadcutter, not cruel but not merciful.
+- **The Breakers:** Five captive psychics, all civilians taken from settlements across the region. They've been in the chairs for weeks to months. They're semiconscious, in pain, and their psychic energy is being siphoned continuously.
 
 **On the Threadcutter:**
 - Her real name is **Sera Mourne**. Former Covenant scholar — brilliant, passionate, one of the best minds in the organization.
@@ -363,7 +363,7 @@ If the party presents evidence to Soraya, read or paraphrase:
 
 ### Transition to Chapter 4
 
-The journey south takes half a day. The landscape deteriorates — the phasing that makes Loom strange becomes the decay that makes the Ashlands hostile. Reality frays at the edges. The ground is dry and cracked, scattered with the remnants of settlements that lost their anchors. Somewhere ahead, beneath a collapsed mesa, the Breaker Station hums with stolen psychic energy.
+The journey south takes half a day. The landscape deteriorates — the phasing that makes Loom strange becomes the decay that makes the Ashlands hostile. Reality frays at the edges. The ground is dry and cracked, scattered with the remnants of settlements that lost their anchors. Somewhere ahead, beneath a scarred hillside, the Breaker Station hums with stolen psychic energy.
 
 The compass doesn't waver. It points to the break in the Beam. It points to the Breakers. It points to the choice the party hasn't made yet.
 

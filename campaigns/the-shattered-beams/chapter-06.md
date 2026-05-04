@@ -53,7 +53,7 @@ This scene is pure atmosphere. There are no enemies outside the Pylon. The envir
 
 **Signs of Recent Activity:** If the party stayed in Loom for the full defense during the Thinny Storm (Chapter 5), the Threadcutter has had time to send advance forces. Evidence is scattered across the approach:
 - Boot prints in the ash-gray dirt, military spacing, heading toward the Pylon's entrance
-- Three discarded supply crates stamped with the Unravelers' mark (a frayed knot)
+- Three discarded supply crates stamped with the Unravelers' mark (a broken circle — a ring with a gap)
 - A dead Unraveler soldier sprawled thirty feet from the entrance, his armor scorched with geometric burn patterns. He tripped the Pylon's exterior defenses. His expression is frozen in surprise, not pain -- the Guardians killed him instantly.
 - DC 12 Investigation: The boot prints indicate a group of 4-6, entering the Pylon within the last day. Three to four are still inside.
 
@@ -61,7 +61,7 @@ This scene is pure atmosphere. There are no enemies outside the Pylon. The envir
 
 ### Possible Player Actions
 
-1. **If they investigate the dead soldier:** The burn patterns match the geometric floor designs visible through the Pylon's entrance. The Guardians' defensive magic. The soldier has standard Unraveler equipment, a half-eaten ration bar, and a folded note in his pocket: *"Secure the Control Chamber. The Commander is en route. Do NOT engage the sentinels -- the scholar says they can be bypassed. Wait for Dace."* The note is signed with the frayed-knot symbol.
+1. **If they investigate the dead soldier:** The burn patterns match the geometric floor designs visible through the Pylon's entrance. The Guardians' defensive magic. The soldier has standard Unraveler equipment, a half-eaten ration bar, and a folded note in his pocket: *"Secure the Control Chamber. The Commander is en route. Do NOT engage the sentinels -- the scholar says they can be bypassed. Wait for Dace."* The note is signed with the broken-circle symbol.
 2. **If they try to circle the Pylon first:** The tower has no other visible entrance. The crystal surface is seamless except for the main entrance -- a fifteen-foot archway on the south face, framed by geometric carvings that pulse with faint inner light. The crystal is warm to the touch and vibrates at the frequency of a heartbeat.
 3. **If they approach cautiously:** Rewarded. They can observe the entrance from a distance and see the faint blue scanning beams sweeping the archway every few seconds. DC 14 Perception reveals the beams originate from two large humanoid shapes standing just inside the threshold.
 
@@ -395,7 +395,7 @@ Moth stands before the crystal tiles, optical sensors fixed on the now-dark surf
 
 > The sealed door opens at your touch -- the Constant's recognition, immediate and certain -- and you step into the heart of the Pylon.
 >
-> The Control Chamber is circular, fifty feet in diameter, with a domed ceiling that rises thirty feet overhead. The walls are lined with consoles -- crystalline panels covered in geometric interfaces that glow with soft, active light. Banks of crystal nodes pulse in rhythms more complex than anything in the shaft below. This room is not dormant. This room is *awake*.
+> The Control Chamber is circular, sixty feet in diameter, with a domed ceiling that rises thirty feet overhead. The walls are lined with consoles -- crystalline panels covered in geometric interfaces that glow with soft, active light. Banks of crystal nodes pulse in rhythms more complex than anything in the shaft below. This room is not dormant. This room is *awake*.
 >
 > At the center of the ceiling, suspended by six crystalline struts, hangs the Beam anchor -- a massive crystal matrix, twelve feet across, faceted like a diamond and burning with inner light. It rotates slowly, imperceptibly, and from its core, a single line of force extends upward through the ceiling, through the Pylon's apex, and into the sky. The Beam. You can't see it, but you can feel it: a column of pure stability, holding reality together above your head with the quiet, relentless certainty of gravity.
 >

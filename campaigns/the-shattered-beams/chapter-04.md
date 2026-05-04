@@ -226,7 +226,7 @@ Whether the Channeler is defeated, captured, or absent (if the party enters via 
 > *For the Unwoven World,*
 > *Sera Mourne*
 
-**DM Note:** This letter accomplishes three things at once: it identifies the Threadcutter as Sera Mourne (a name the Covenant will recognize -- Keeper Jorin will confirm she was a brilliant scholar who disappeared from the Covenant three years ago); it reveals her destination (the Eld Pylon of Keth); and it establishes her timeline (eight days from the date of the letter, which Vekk's logbook confirms was written six days ago -- leaving two days). It also reveals something about Sera's character: she regrets the necessity. She is not indifferent to suffering. She has simply decided the suffering is justified.
+**DM Note:** This letter accomplishes three things at once: it identifies the Threadcutter as Sera Mourne (a name the Covenant will recognize -- Keeper Jorin will confirm she was a brilliant scholar who disappeared from the Covenant five years ago); it reveals her destination (the Eld Pylon of Keth); and it establishes her timeline (eight days from the date of the letter, which Vekk's logbook confirms was written six days ago -- leaving two days). It also reveals something about Sera's character: she regrets the necessity. She is not indifferent to suffering. She has simply decided the suffering is justified.
 
 **A Map:** Pinned to the wall above the desk. A regional map showing the location of the Eld Pylon of Keth, circled in red ink, with a date written beside it: eight days from the letter's date. The route is marked. Travel time annotations suggest a day and a half on foot from Loom.
 
@@ -402,7 +402,7 @@ Whether the party frees the Breakers, leaves them, or performs a controlled shut
 - **The station's systems** -- if a character with Arcana proficiency examines the antenna array's targeting data (DC 14 Arcana), they find it is calibrated to a specific Beam, and the calibration notes reference "the Eld Pylon of Keth" as the Beam's anchor point.
 
 **The Intelligence:**
-- The Threadcutter is **Sera Mourne**, a former Covenant of the Pylon scholar who left the order three years ago.
+- The Threadcutter is **Sera Mourne**, a former Covenant of the Pylon scholar who left the order five years ago.
 - She is heading for the **Eld Pylon of Keth** to destroy the fifth Beam directly, using a device called the Resonance Key.
 - She has approximately **two days' head start** -- possibly less, depending on how long the party spent in the station.
 

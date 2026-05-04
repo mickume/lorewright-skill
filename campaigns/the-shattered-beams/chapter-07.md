@@ -29,7 +29,7 @@
 
 ### Introduction
 
-> Dawn finds you in the Control Chamber, sixty feet above the Ashlands, and for the first time since the Waystation, the light looks almost right. The crystal matrix hangs from the ceiling like a chandelier carved from a single impossible gem -- fifteen feet across, multifaceted, pulsing with the Beam's energy in a deep, rhythmic glow that you feel in your ribs. It is a heartbeat. The Beam's heartbeat. It has been beating since before your grandparents' grandparents drew breath, and standing beneath it, you understand viscerally what it means for something this old and vast to be fragile.
+> Dawn finds you in the Control Chamber, sixty feet above the Ashlands, and for the first time since the Waystation, the light looks almost right. The crystal matrix hangs from the ceiling like a chandelier carved from a single impossible gem -- twelve feet across, multifaceted, pulsing with the Beam's energy in a deep, rhythmic glow that you feel in your ribs. It is a heartbeat. The Beam's heartbeat. It has been beating since before your grandparents' grandparents drew breath, and standing beneath it, you understand viscerally what it means for something this old and vast to be fragile.
 >
 > Control consoles ring the chamber walls, their geometric surfaces dark but warm to the touch. The floor's inscribed patterns glow faintly -- amber and rose -- tracing circuits that connect the consoles to the matrix above. Windows of transparent crystal offer a panoramic view of the Ashlands in every direction: ash-gray earth, the skeletal fingers of dead forests, a sky that can't decide what color it wants to be.
 >
@@ -458,7 +458,7 @@ Step aside. Let the Key complete its work.
 
 Read:
 
-> The crystal matrix detonates. Not outward -- *inward*, collapsing in on itself like a star dying, drawing the Beam's light down into a single, impossibly bright point that hangs in the air where fifteen feet of crystal used to be. The point holds for one heartbeat. Two.
+> The crystal matrix detonates. Not outward -- *inward*, collapsing in on itself like a star dying, drawing the Beam's light down into a single, impossibly bright point that hangs in the air where twelve feet of crystal used to be. The point holds for one heartbeat. Two.
 >
 > Then it goes out.
 >
@@ -777,7 +777,7 @@ This chapter's outcome is shaped by decisions made throughout the campaign. Befo
 | Spell Save DC | 19 (base 17 + 2) |
 | Legendary Resistance | 2/day |
 | Added Spell | Telekinesis |
-| HP | 99 |
+| HP | 120 |
 | AC | 12 (15 with mage armor) |
 | Key Tactics | Shield, Counterspell, Hold Person, Telekinesis, Wall of Force |
 | Goal | Run out the clock; defend the Key |

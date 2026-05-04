@@ -16,7 +16,7 @@ These NPCs are central to the campaign's story and appear in multiple chapters.
 **First Appearance:** [Chapter 1, Scene 2](chapter-01.md#scene-2-the-waystation)
 
 #### Appearance
-A tall, gaunt man in his late sixties with a scholar's stoop and a soldier's hands. His hair is white and cropped close, his skin weathered to the color of old parchment. His eyes are pale grey — nearly colorless — and they carry the particular focus of someone who has spent decades watching for something specific. He wears a faded blue robe over practical traveling clothes, and his fingers are stained with crystalline residue from years of maintaining the Waystation's barrier.
+A tall, gaunt man in his late sixties with a scholar's stoop and a soldier's hands. His white hair is pulled back in a loose knot, his skin weathered to the color of old parchment. His eyes are pale blue — the color of ice on a lake — and they carry the particular focus of someone who has spent decades watching for something specific. A thin scar runs from his left temple to his jaw, old and well-healed. He wears a faded blue robe over practical traveling clothes, and his fingers are stained with crystalline residue from years of maintaining the Waystation's barrier.
 
 ![Aldric Vane](art/images/aldric-vane.jpg)
 
@@ -154,7 +154,7 @@ She is not a sadist. She does not enjoy the Breakers' suffering. But she has dec
 **First Appearance:** [Chapter 4, Scene 4](chapter-04.md#scene-4-the-breaker-chamber)
 
 #### Appearance
-Young — late teens or early twenties, though weeks in the Breaker chair have aged her. Gaunt face, shaved head (the chair's tendrils require direct contact), dark circles under luminous grey eyes that seem to look *through* things rather than at them. Tall and thin, she moves with the unsteadiness of someone relearning their body. Her hands tremble constantly. She wears the shapeless grey shift the Breakers are given, and her wrists bear the marks of the chair's restraints.
+Young — sixteen years old, though weeks in the Breaker chair have aged her beyond her years. Gaunt face, shaved head (the chair's tendrils require direct contact), dark circles under luminous grey eyes that seem to look *through* things rather than at them. Tall and thin, she moves with the unsteadiness of someone relearning their body. Her hands tremble constantly. She wears the shapeless grey shift the Breakers are given, and her wrists bear the marks of the chair's restraints.
 
 ![Wren](art/images/wren.jpg)
 

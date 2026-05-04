@@ -7,10 +7,11 @@ instructions: campaign-style.md
 ---
 
 Portrait of an elderly human man in his late sixties. Tall and gaunt with a 
-scholar's stoop and a soldier's weathered hands. White hair cropped close to 
-the skull. Pale grey eyes — nearly colorless — with an intense, searching focus. 
-Skin weathered to the color of old parchment, deeply lined around the eyes and 
-mouth. He wears a faded blue robe over practical traveling clothes, the fabric 
+scholar's stoop and a soldier's weathered hands. White hair pulled back in a 
+loose knot. Pale blue eyes — the color of ice on a lake — with an intense, 
+searching focus. A thin scar runs from his left temple to his jaw, old and 
+well-healed. Skin weathered to the color of old parchment, deeply lined around 
+the eyes and mouth. He wears a faded blue robe over practical traveling clothes, the fabric 
 worn soft with decades of use. His fingers are stained with faint crystalline 
 residue — iridescent, catching light. Behind him, a shimmering barrier of pale 
 blue energy and the dark silhouette of a watchtower. His expression is one of 
