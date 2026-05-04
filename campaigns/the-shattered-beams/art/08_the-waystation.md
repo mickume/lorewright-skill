@@ -4,6 +4,8 @@ aspect_ratio: "16:9"
 resolution: 2K
 temperature: 0.9
 instructions: campaign-style.md
+references:
+    - images/the-ashlands.jpg
 ---
 
 A crumbling stone watchtower standing alone in a vast, blighted wasteland, 
