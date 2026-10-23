@@ -41,7 +41,7 @@
 >
 > Like coming home to a place you have never been.
 
-![The Eld Pylon of Keth](art/images/eld-pylon.jpg)
+![The Eld Pylon of Keth](art/locations/images/eld-pylon.jpg)
 
 ### DM Information
 
@@ -86,7 +86,7 @@ This scene is pure atmosphere. There are no enemies outside the Pylon. The envir
 >
 > They are waiting.
 
-![The Entry Hall](art/images/pylon-entry-hall.jpg)
+![The Entry Hall](art/scenes/images/pylon-entry-hall.jpg)
 
 ### DM Information
 
@@ -151,7 +151,7 @@ The party must rely on the Constant bond. Any PC can approach a Guardian and all
 >
 > The beauty has claws.
 
-![The Resonance Chamber](art/images/resonance-chamber.jpg)
+![The Resonance Chamber](art/scenes/images/resonance-chamber.jpg)
 
 ### DM Information
 
@@ -272,7 +272,7 @@ A crystalline firearm that fires concentrated arcane energy. Designed by the Old
 >
 > The projection flickers and fades. Waiting.
 
-![The Memory Banks](art/images/memory-banks.jpg)
+![The Memory Banks](art/scenes/images/memory-banks.jpg)
 
 ### DM Information
 
@@ -413,7 +413,7 @@ Moth stands before the crystal tiles, optical sensors fixed on the now-dark surf
 >
 > "You can put your weapons away, or you can keep them out. Either way, I'd like to talk before anyone does something we can't undo."
 
-![Commander Dace in the Control Chamber](art/images/commander-dace.jpg)
+![Commander Dace in the Control Chamber](art/characters/images/commander-dace.jpg)
 
 ### DM Information
 

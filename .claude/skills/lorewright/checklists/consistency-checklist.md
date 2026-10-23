@@ -384,7 +384,7 @@ When you change:
 - [ ] campaign-overview.md (key NPCs section)
 - [ ] factions.md (if they're faction member)
 - [ ] locations.md (if they're associated with location)
-- [ ] art/npc-name.md if description changed
+- [ ] art/characters/npc-name.md if description changed, plus the scenes that list it in `cast:` (need regenerating)
 
 ### A Location:
 - [ ] locations.md
@@ -392,7 +392,7 @@ When you change:
 - [ ] campaign-overview.md (key locations section)
 - [ ] Other locations (for travel times, connections)
 - [ ] npcs.md (if NPCs are stationed there)
-- [ ] art/location-name.md if description changed
+- [ ] art/locations/location-name.md if description changed, plus the scenes that list it in `references:` (need regenerating)
 
 ### A Chapter:
 - [ ] The chapter file itself

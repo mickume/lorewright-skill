@@ -37,7 +37,7 @@
 >
 > Loom is directly in its path.
 
-![The Thinny Storm Approaches](art/images/thinny-storm-approaches.jpg)
+![The Thinny Storm Approaches](art/scenes/images/thinny-storm-approaches.jpg)
 
 ### DM Information
 
@@ -95,7 +95,7 @@ Wren recovers after a minute but remains shaken. From this point forward, she ca
 >
 > [Elder Soraya](npcs.md#elder-soraya) stands at the central table, a map of Loom spread before her, weighted at the corners with chunks of stabilized crystal. Her hands are flat on the table. Her jaw is set. Her eyes are the eyes of a woman who has been waiting for the end of the world and has just watched it arrive on schedule.
 
-![Emergency Council](art/images/emergency-council.jpg)
+![Emergency Council](art/scenes/images/emergency-council.jpg)
 
 ### DM Information
 
@@ -178,7 +178,7 @@ If the party asks for more information, Soraya and Jorin can provide:
 >
 > The storm is here.
 
-![The Storm Hits Loom](art/images/thinny-storm.jpg)
+![The Storm Hits Loom](art/scenes/images/thinny-storm.jpg)
 
 ### DM Information
 

@@ -417,29 +417,59 @@ The output lands in `_site/` inside the campaign directory by default. Open `ind
 
 ### dndig — AI Image Generation
 
-`dndig` generates campaign artwork from markdown prompt files using Google's Gemini API. It takes a single prompt file or an entire directory and produces images for NPC portraits, location scenes, encounters, and maps.
+[`dndig`](https://github.com/mickume/dndig) generates campaign artwork with Google's Gemini image models, with **continuity**: an approved character portrait (a *pick*) is sent as a labelled reference image to every scene that lists the character in `cast:`.
 
-```bash
-# Generate all art for a campaign (processes files in numbered order)
-dndig campaigns/my-campaign/art/ -v
+Every campaign's `art/` directory is a dndig project — `dndig.yaml` marks it as the root:
 
-# Generate a single image
-dndig campaigns/my-campaign/art/01_captain-harrow.md
-
-# Quick low-res drafts for iteration
-dndig campaigns/my-campaign/art/01_captain-harrow.md -o drafts/
+```
+campaigns/my-campaign/art/
+├── dndig.yaml                  # style: campaign, workers: 2
+├── .gitignore                  # **/takes/ and **/discards/
+├── README.md                   # how to generate every image for this campaign
+├── styles/campaign.md          # style directive applied to every prompt
+├── characters/captain-harrow.md        # kind: character (title = file name)
+├── characters/images/captain-harrow.png  # the pick, linked from npcs.md
+├── locations/harbor-district.md        # kind: location
+├── scenes/ambush-at-the-docks.md       # kind: scene, cast: [captain-harrow], references: [harbor-district]
+└── items/ maps/                        # optional
 ```
 
-**Key options:**
+Titles are unique across `art/` and equal the file name; there are no numeric prefixes, because dndig generates every character and place before the scenes that need it. The image of `art/<folder>/<title>.md` is always `art/<folder>/images/<title>.png`, so campaign documents link to that path before the image exists. Do not run `dndig init` in a campaign (it adds sample prompts).
 
-| Flag | Description | Default |
-|------|-------------|---------|
-| `-o, --output-dir DIR` | Output directory for generated images | `art/images` |
-| `-w, --workers N` | Concurrent workers for batch processing | `4` |
-| `-v, --verbose` | Progress bar and verbose output | off |
-| `--api-key KEY` | Gemini API key (overrides `GEMINI_API_KEY` env var) | from env |
+```bash
+cd campaigns/my-campaign/art
 
-**Requires:** `GEMINI_API_KEY` environment variable set.
+dndig status                                   # prompts, picks, and what each scene still needs
+dndig generate characters/ --dry-run           # print the requests without spending anything
 
-Prompt files are markdown with YAML frontmatter placed in the campaign's `art/` directory. NPCs are numbered first (`01_`, `02_`, ...) so their portraits are generated before scenes that reference them. See [dndig-reference.md](/.claude/skills/lorewright/modules/dndig-reference.md) for full prompt format, aspect ratios, and campaign art integration patterns.
+# Curated: approve characters and places before scenes reuse them
+dndig generate characters/
+dndig pick characters/captain-harrow.md --take 2
+dndig generate locations/
+dndig pick locations/harbor-district.md --take 1
+dndig generate scenes/ --auto-pick
 
+# Unattended: everything in dependency order, first take of each picked
+dndig generate characters/ locations/ scenes/ --auto-pick
+
+# Fix one image
+dndig refine characters/captain-harrow.md "make the scar longer"
+```
+
+**Commands:**
+
+| Command | Does |
+|---------|------|
+| `generate <prompt.md\|dir>... [--takes N] [--dry-run] [--auto-pick]` | Generate candidate takes (a directory = the prompt files directly in it) |
+| `pick <prompt.md> --take N` | Approve a take; moves it to `images/<title>.png` beside the prompt |
+| `refine <prompt.md> "instruction" [--take N]` | Edit the pick (or a take) in conversation |
+| `sheet <prompt.md>` | Turnaround sheet of a character's pick, sent along with it into scenes |
+| `prune <prompt.md\|dir>... [--delete]` | Move unpicked takes to `discards/` |
+| `status [dir]` | Prompts, takes, picks, missing casts |
+| `style derive <out.md> <image>...` | Derive a style directive from example images |
+
+Global flags: `-v/--verbose`, `--debug`, `--api-key KEY`; `--model ID` on every generating command.
+
+**Requires:** `GEMINI_API_KEY` environment variable set. Install with `git clone https://github.com/mickume/dndig.git && cd dndig && make install` (Go 1.26+).
+
+See [dndig-reference.md](/.claude/skills/lorewright/modules/dndig-reference.md) for the prompt format, aspect ratios, and campaign art integration patterns, and [templates/art-README.md](/.claude/skills/lorewright/templates/art-README.md) for the per-campaign generation guide.

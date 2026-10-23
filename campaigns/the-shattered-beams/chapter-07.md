@@ -39,7 +39,7 @@
 >
 > She carries something in her right hand. Even at this distance, the crystal matrix reacts -- a shudder in its rhythm, a stutter in its light, as if the heart skipped a beat.
 
-![The Threadcutter's Arrival](art/images/threadcutter-arrival.jpg)
+![The Threadcutter's Arrival](art/scenes/images/threadcutter-arrival.jpg)
 
 ### DM Information
 
@@ -79,7 +79,7 @@ When Sera enters the Control Chamber, read:
 >
 > "You know what that is. You've read the records -- I can see it in the way you look at it. Not with awe. With understanding." A breath. "So let me say what I came to say, and then you can decide whether I'm a monster or the only person in this dying world who's willing to do what needs to be done."
 
-![The Parlay -- Sera Mourne stands in the Control Chamber, the Resonance Key set aside, her ink-stained hands folded, the crystal matrix pulsing above](art/images/the-parlay.jpg)
+![The Parlay -- Sera Mourne stands in the Control Chamber, the Resonance Key set aside, her ink-stained hands folded, the crystal matrix pulsing above](art/scenes/images/the-parlay.jpg)
 
 **Sera's Argument (deliver through dialogue, not monologue -- let the party interrupt):**
 
@@ -216,7 +216,7 @@ Combat begins. Proceed to **Scene 2: Phase 1 -- The Assault**.
 >
 > From below, the sound of boots. Her soldiers are coming.
 
-![The Key Countdown -- the Resonance Key screams against the crystal matrix, cracks spreading, harsh light pouring through fractures as combat erupts](art/images/key-countdown.jpg)
+![The Key Countdown -- the Resonance Key screams against the crystal matrix, cracks spreading, harsh light pouring through fractures as combat erupts](art/scenes/images/key-countdown.jpg)
 
 ### DM Information
 
@@ -353,7 +353,7 @@ Sera fights defensively. Her goal is to run out the clock, not to kill the party
 >
 > But they are watching.
 
-![The Surge](art/images/crimson-threshold.jpg)
+![The Surge](art/scenes/images/crimson-threshold.jpg)
 
 ### DM Information
 
@@ -432,7 +432,7 @@ This is the moment where mid-combat persuasion becomes possible. DC 15, reduced 
 >
 > The countdown continues. The Key pulses. The room shakes. And in this moment -- this desperate, fractured, impossible moment -- you understand that you have a choice to make. Not a tactical choice. Not a strategic choice. A choice about what the world should be.
 
-![The Beam Dying -- the naked Beam visible through the shattered matrix, a pillar of achingly beautiful light wavering like a candle in a hurricane](art/images/beam-dying.jpg)
+![The Beam Dying -- the naked Beam visible through the shattered matrix, a pillar of achingly beautiful light wavering like a candle in a hurricane](art/scenes/images/beam-dying.jpg)
 
 ### DM Information
 
@@ -543,7 +543,7 @@ Pause after the climactic moment. Let the players breathe. Let them process. The
 >
 > The Constant hums. It is quiet and warm and, for the first time since the Waystation, it does not feel like urgency. It feels like gratitude.
 
-![The Healing -- green pushing through ash-grey earth at the Pylon's base, the sky clearing to an impossible blue, the first Thinny dissolving](art/images/epilogue-healing.jpg)
+![The Healing -- green pushing through ash-grey earth at the Pylon's base, the sky clearing to an impossible blue, the first Thinny dissolving](art/scenes/images/epilogue-healing.jpg)
 
 ### If the Beam Falls (Option 2)
 
@@ -561,7 +561,7 @@ Pause after the climactic moment. Let the players breathe. Let them process. The
 >
 > The world is dying faster now. But it is not dead yet.
 
-![The Falling -- Thinnies bloom across the Ashlands like poisonous flowers, the sky tearing open to reveal impossible places beyond](art/images/epilogue-falling.jpg)
+![The Falling -- Thinnies bloom across the Ashlands like poisonous flowers, the sky tearing open to reveal impossible places beyond](art/scenes/images/epilogue-falling.jpg)
 
 ### Sera's Fate
 

@@ -30,7 +30,7 @@ The party has spent time in Loom, navigating its phasing streets and temporal in
 >
 > The air tastes of copper and static. A low hum rises from the earth itself, felt more than heard, like standing too close to a lightning strike that hasn't happened yet.
 
-![Breaker Station Exterior](art/images/breaker-station-exterior.jpg)
+![Breaker Station Exterior](art/scenes/images/breaker-station-exterior.jpg)
 
 ### DM Information
 
@@ -90,7 +90,7 @@ The party enters the station. The hum grows louder with every step downward. The
 >
 > "Well," she says. Her voice is flat, clipped, the voice of someone who has given a lot of orders and doesn't waste words. "You're not the supply run."
 
-![Station Commander Vekk](art/images/commander-vekk.jpg)
+![Station Commander Vekk](art/characters/images/commander-vekk.jpg)
 
 ### DM Information
 
@@ -175,7 +175,7 @@ The stairs descend. The hum grows louder, transitioning from background noise to
 >
 > One voice is singing. The song has no words. It is beautiful and it is the worst thing you have ever heard.
 
-![Processing Hall](art/images/processing-hall.jpg)
+![Processing Hall](art/scenes/images/processing-hall.jpg)
 
 ### DM Information
 
@@ -271,7 +271,7 @@ The stairs to Level 3 descend into cold air and the smell of ozone and unwashed 
 >
 > "My name is... Wren."
 
-![The Breaker Chamber](art/images/breaker-station.jpg)
+![The Breaker Chamber](art/locations/images/breaker-station.jpg)
 
 ### DM Information
 

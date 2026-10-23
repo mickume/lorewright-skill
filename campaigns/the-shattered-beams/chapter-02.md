@@ -53,7 +53,7 @@ The wrongness is subtle. The party is close enough to the Waystation's influence
 
 > The path you've been following -- a pale groove worn into the ash-grey earth by feet or wheels long gone -- simply stops. Not at a river or a cliff or a wall. It stops in the middle of a flat expanse, the packed earth giving way to nothing. Ahead, where the road should continue, the terrain is different -- darker, slightly lower, as if a section of landscape was cut away and the wound healed wrong. A flower grows at the road's exact terminus. As you watch, it blooms -- white petals unfurling, a burst of impossible color against the grey -- and then withers. Blooms again. Withers again. The cycle takes about four seconds.
 
-![The Wrong Pond -- a pool reflecting a night sky that doesn't match the amber day above, a silver fish leaping in the wrong stars](art/images/wrong-pond.jpg)
+![The Wrong Pond -- a pool reflecting a night sky that doesn't match the amber day above, a silver fish leaping in the wrong stars](art/scenes/images/wrong-pond.jpg)
 
 **DM Information:** The road once continued to a settlement that no longer exists. The gap is a scar left by a Thinny that passed through months ago, consuming the terrain and everything on it. The flower is caught in a temporal micro-loop -- a small enough anomaly to be fascinating rather than dangerous. A DC 13 Arcana check reveals that the flower is experiencing time differently than the surrounding area, cycling through its entire lifecycle repeatedly. This is a symptom of Beam deterioration -- time becomes unreliable where the Beams' influence weakens.
 
@@ -74,7 +74,7 @@ If a character picks the flower, it crumbles to dust in their hand. One second l
 >
 > There are more. As you look around, you see them: a bird skeleton in a spiral, a scatter of rodent bones arranged in concentric circles, the jaw of something larger placed at an angle that precisely bisects the horizon. The patterns extend in every direction, as far as you can see, each one different, each one perfect, each one made from the remains of something that once lived.
 
-![The Bone Geometry -- animal skeletons arranged in perfect geometric patterns across the ash-grey earth, each one mathematically precise](art/images/bone-geometry.jpg)
+![The Bone Geometry -- animal skeletons arranged in perfect geometric patterns across the ash-grey earth, each one mathematically precise](art/scenes/images/bone-geometry.jpg)
 
 **DM Information:** The bone arrangements are not the work of any creature. They are a symptom of the Ashlands' underlying wrongness -- the residual influence of Old Ones technology reorganizing matter into geometric patterns. The effect is passive, ambient, and ongoing. Bones left on the ground in the Ashlands will slowly migrate into geometric arrangements over a period of days. Living creatures are unaffected. This detail is atmospheric, not mechanically significant, but it establishes the Old Ones' legacy as pervasive and strange.
 
@@ -141,7 +141,7 @@ The Skyship Graveyard is visible from the hilltop -- three crashed vessels in a 
 >
 > The valley is quiet. The kind of quiet that comes after something terrible, when the echoes have faded and all that remains is the evidence.
 
-![The Skyship Graveyard -- three crashed vessels in a valley of ash-grey earth, the largest tilted with a dead crystal engine beneath its keel](art/images/skyship-graveyard.jpg)
+![The Skyship Graveyard -- three crashed vessels in a valley of ash-grey earth, the largest tilted with a dead crystal engine beneath its keel](art/scenes/images/skyship-graveyard.jpg)
 
 ### DM Information
 
@@ -157,7 +157,7 @@ The largest ship, the *Drifting Constance*, is partially intact and can be enter
 >
 > This ship didn't fall fast. It fell slowly -- the engine failing by degrees, the crew trying to coax it back to life, the descent becoming inevitable over hours rather than seconds. You can read the story in the scratches on the walls where cargo was hastily lashed down, in the chalk marks on the corridor where someone measured the tilt every hour, in the captain's coat hung neatly on a peg near the bridge door, as if she expected to come back for it.
 
-![The interior of the Drifting Constance -- tilted corridors, arcane lantern light, and the quiet evidence of a ship that fell by degrees](art/images/skyship-interior.jpg)
+![The interior of the Drifting Constance -- tilted corridors, arcane lantern light, and the quiet evidence of a ship that fell by degrees](art/scenes/images/skyship-interior.jpg)
 
 **The Bridge:**
 
@@ -258,7 +258,7 @@ The party continues their journey. The terrain beyond the graveyard flattens int
 >
 > The loop resets every ninety seconds. You can count the screams.
 
-![The Endless Field -- ghostly soldiers locked in an endlessly repeating battle, their translucent forms flickering against the ash-grey plain](art/images/endless-field.jpg)
+![The Endless Field -- ghostly soldiers locked in an endlessly repeating battle, their translucent forms flickering against the ash-grey plain](art/scenes/images/endless-field.jpg)
 
 ### DM Information
 
@@ -336,7 +336,7 @@ Beyond the Endless Field, the terrain changes. The flat plain gives way to a lan
 >
 > As you approach, you feel it. The pull. The Constant, the bond that ties you together, reaching outward -- not toward each other but toward the door. Toward whatever is behind it. The pull is gentle but unmistakable, like a hand on your shoulder turning you toward something you need to see.
 
-![The Ruin of Vethara -- a triangular door of dark metal set into a geometric hillside, its crystalline circuitry dormant](art/images/ruin-of-vethara.jpg)
+![The Ruin of Vethara -- a triangular door of dark metal set into a geometric hillside, its crystalline circuitry dormant](art/scenes/images/ruin-of-vethara.jpg)
 
 ### DM Information
 
@@ -368,7 +368,7 @@ If a non-Constant-bound creature touches the door, nothing happens. The door res
 >
 > The figure does not move. Its chest does not rise. But the amber eye watches you with the patience of something that has been waiting for a very, very long time.
 
-![Moth awakening -- a warforged construct of tarnished bronze stirs on a crystal plinth, one amber eye bright, the other cracked and dark](art/images/moth-awakening.jpg)
+![Moth awakening -- a warforged construct of tarnished bronze stirs on a crystal plinth, one amber eye bright, the other cracked and dark](art/scenes/images/moth-awakening.jpg)
 
 ### Activating Moth
 
@@ -442,7 +442,7 @@ When Moth activates, the facility's security system also wakes. The Old Ones des
 >
 > Moth presses itself back against the plinth. "I am sorry. I cannot... I do not have the authority to... stop them."
 
-![Security Activation -- ancient constructs emerge from the chamber walls, helm-slits glowing red, as the facility's alarm turns the amber light crimson](art/images/security-activation.jpg)
+![Security Activation -- ancient constructs emerge from the chamber walls, helm-slits glowing red, as the facility's alarm turns the amber light crimson](art/scenes/images/security-activation.jpg)
 
 **Encounter: 2 Animated Armors (MM p.19) and 1 Helmed Horror (MM p.183)**
 
@@ -489,7 +489,7 @@ After the security constructs are defeated, the sealed alcove can be accessed. T
 >
 > Not just a direction. A *pull*. You can feel it through the brass -- the same pull as the Constant, but refined, focused, given purpose. The needle is pointing toward something specific, something that exists not just in a place but in a *time*. The device is not a compass in the traditional sense. It does not find north. It finds *when*.
 
-![The Chrono-Compass -- a sphere of brass and crystal on its stand, its golden needle locked on a direction, Moth leaning close with recognition](art/images/chrono-compass.jpg)
+![The Chrono-Compass -- a sphere of brass and crystal on its stand, its golden needle locked on a direction, Moth leaning close with recognition](art/scenes/images/chrono-compass.jpg)
 
 **The Chrono-Compass** (Uncommon Wondrous Item)
 - Points toward the nearest Beam-resonant location AND indicates temporal displacement in the area. The needle glows brighter as temporal distortion increases.
@@ -551,7 +551,7 @@ Moth accompanies them (if accepted), walking with a slight, grinding gait, its a
 >
 > Toward Loom.
 
-![Loom on the horizon -- a city that flickers between gleaming towers, crumbling ruins, and a salvaged settlement, phasing between eras](art/images/loom-horizon.jpg)
+![Loom on the horizon -- a city that flickers between gleaming towers, crumbling ruins, and a salvaged settlement, phasing between eras](art/scenes/images/loom-horizon.jpg)
 
 ### Milestone Advancement
 
