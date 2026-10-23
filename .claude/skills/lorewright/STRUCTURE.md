@@ -101,14 +101,14 @@ Each chapter typically includes:
 
 **Location/Scene Description**
 - Very detailled and verbose description, it has inspire the player's imagination. It also serves as prompt for AI image generation.
-- Insert an image reference immediately after the read-aloud text, pointing at the pick dndig will produce: `![Alt Text](art/scenes/images/<title>.png)`. The path is fixed by the prompt's folder and title, so it is correct before the image exists.
+- Insert an image reference immediately after the read-aloud text, pointing at the pick dndig will produce: `![Alt Text](art/scenes/images/<title>.jpg)`. The path is fixed by the prompt's folder and title, so it is correct before the image exists.
 
 **Art Prompts**
 - The campaign's `art/` directory is a [dndig](modules/dndig-reference.md) project: `dndig.yaml`, `.gitignore`, `README.md` (from [templates/art-README.md](templates/art-README.md)) and `styles/campaign.md` at its root
 - One markdown file per subject, in a folder per kind: `characters/`, `locations/`, `scenes/`, and optionally `items/` and `maps/`
 - File name = `title`, lowercase kebab-case, unique across all of `art/`; no numeric prefixes (dndig orders runs by dependency)
 - A scene lists the characters in it under `cast:` and the places it reuses under `references:` (by title), so their approved portraits travel with it as reference images
-- **Every art prompt must be referenced** by at least one `![...](art/<folder>/images/<title>.png)` embed in the campaign content (chapters, npcs.md, or locations.md)
+- **Every art prompt must be referenced** by at least one `![...](art/<folder>/images/<title>.jpg)` embed in the campaign content (chapters, npcs.md, or locations.md)
 - **Every image embed in content must have a matching art prompt** — no image references without a corresponding prompt file
 
 ```markdown

@@ -15,7 +15,7 @@ This directory holds the image prompts for [Campaign Name] and the approved imag
 <!-- Remove the rows for folders this campaign does not have. -->
 
 - `styles/campaign.md` — the campaign's visual style, applied to every prompt (set in `dndig.yaml`).
-- `<folder>/<title>.md` — a prompt file. Its approved image (the **pick**) is `<folder>/images/<title>.png`, and that is the path the campaign documents link to.
+- `<folder>/<title>.md` — a prompt file. Its approved image (the **pick**) is `<folder>/images/<title>.jpg`, and that is the path the campaign documents link to.
 - `<folder>/<title>/` — dndig's workspace for that prompt: every candidate take in `takes/`, `pick.json`, and an optional turnaround `sheet.png`. Takes are git-ignored.
 
 Scenes list the characters in them under `cast:` and the places under `references:`. dndig sends those picks along as reference images, so a portrait approved once keeps the same face in every scene. That is why characters are approved before scenes.

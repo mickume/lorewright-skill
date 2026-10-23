@@ -462,10 +462,10 @@ Captain Harrow stands at the edge of the pier, cutlass drawn...
 
 **10.4: Insert Image References into Content**
 
-Every prompt's image path is known before generation: the pick of `art/<folder>/<title>.md` is `art/<folder>/images/<title>.png`. Embed it as you write the prompt:
+Every prompt's image path is known before generation: the pick of `art/<folder>/<title>.md` is `art/<folder>/images/<title>.jpg`. Embed it as you write the prompt:
 
 1. Identify the corresponding location in the campaign text (chapter, npcs.md, or locations.md)
-2. Insert `![Alt Text](art/<folder>/images/<title>.png)`
+2. Insert `![Alt Text](art/<folder>/images/<title>.jpg)`
 3. Follow the placement rules from [formatting-conventions.md](../modules/formatting-conventions.md#image-integration):
    - **NPC portraits** → after the appearance description in `npcs.md`
    - **Scene/location images** → after the read-aloud text in the chapter or `locations.md`
@@ -491,7 +491,7 @@ dndig generate characters/ --dry-run
 **10.7: Verify Image Integration**
 
 Cross-check that:
-- Every prompt file under `art/` (excluding `styles/` and `README.md`) has at least one `![...](art/<folder>/images/<title>.png)` reference in the campaign content
+- Every prompt file under `art/` (excluding `styles/` and `README.md`) has at least one `![...](art/<folder>/images/<title>.jpg)` reference in the campaign content
 - Every `![...](art/...)` reference in chapters, npcs.md, and locations.md has a corresponding prompt file whose folder and title match the path
 - Every scene's `cast:` and `references:` name existing prompt titles
 

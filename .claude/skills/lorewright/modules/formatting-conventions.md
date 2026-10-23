@@ -64,7 +64,7 @@ party avoided the trap in Area 3, the golem is already active and hostile.
 
 ### 3. Image Placeholder
 ```markdown
-![Grand Hall](art/locations/images/grand-hall.png)
+![Grand Hall](art/locations/images/grand-hall.jpg)
 ```
 
 ### 4. DM Information
@@ -93,7 +93,7 @@ party avoided the trap in Area 3, the golem is already active and hostile.
 > is thick with dust and the faint smell of decay. Your footsteps echo in the
 > oppressive silence.
 
-![Grand Hall](art/locations/images/grand-hall.png)
+![Grand Hall](art/locations/images/grand-hall.jpg)
 
 This hall once served as the throne room of the ancient king. The carvings on the
 columns tell the story of his conquests (DC 12 History reveals this).
@@ -162,9 +162,9 @@ Art prompts and content are a **closed loop**: every art prompt must be referenc
 
 1. **Every art prompt file → at least one image reference in content.** If you create `art/locations/harbor-district.md`, the generated image must appear somewhere in the campaign text (chapter, locations.md, or npcs.md).
 
-2. **Every image reference in content → a matching art prompt.** If a chapter contains `![Harbor District](art/locations/images/harbor-district.png)`, there must be an art prompt file `art/locations/harbor-district.md` with `title: harbor-district`.
+2. **Every image reference in content → a matching art prompt.** If a chapter contains `![Harbor District](art/locations/images/harbor-district.jpg)`, there must be an art prompt file `art/locations/harbor-district.md` with `title: harbor-district`.
 
-3. **The prompt's folder and title determine the image path.** dndig saves the approved image (the pick) of `art/<folder>/<title>.md` as `art/<folder>/images/<title>.png`. The path is known before generation, so write it when you write the prompt; it never changes when an image is regenerated.
+3. **The prompt's folder and title determine the image path.** dndig saves the approved image (the pick) of `art/<folder>/<title>.md` as `art/<folder>/images/<title>.jpg`. The path is known before generation, so write it when you write the prompt; it never changes when an image is regenerated.
 
 ### Placement Rules
 
@@ -182,17 +182,17 @@ Insert images in content at the point where they have the most impact for the DM
 ### Image Reference Format
 
 ```markdown
-![Descriptive Alt Text](art/<folder>/images/<title>.png)
+![Descriptive Alt Text](art/<folder>/images/<title>.jpg)
 ```
 
 - **Alt text** should describe the subject concisely (e.g., "Captain Harrow", "The Grand Hall", "Ambush at the Docks")
 - **Path** is always relative to the campaign root directory
-- **Extension** is `.png` (what Gemini returns); use another extension only when the pick on disk has one
+- **Extension** is always `.jpg`; if a pick on disk has another extension, convert it to JPEG at the `.jpg` path rather than changing the link
 
 ### Verification
 
 Before marking art work complete, verify:
-- Every prompt file under `art/` (excluding `styles/` and `README.md`) has at least one matching `![...](art/<folder>/images/<title>.png)` reference in the campaign content
+- Every prompt file under `art/` (excluding `styles/` and `README.md`) has at least one matching `![...](art/<folder>/images/<title>.jpg)` reference in the campaign content
 - Every `![...](art/...)` reference in chapters, npcs.md, and locations.md matches the folder and title of a prompt file
 - Every `cast:` and `references:` entry names an existing prompt title (`dndig status` shows unknown ones under `needs:`)
 
@@ -241,7 +241,7 @@ flowchart LR
 For detailed battle maps or location maps:
 
 ```markdown
-![Dungeon Level 1 Map](art/maps/images/dungeon-level-1-map.png)
+![Dungeon Level 1 Map](art/maps/images/dungeon-level-1-map.jpg)
 
 **Map Key:**
 - Green squares: Safe areas

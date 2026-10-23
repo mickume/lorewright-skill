@@ -214,7 +214,7 @@ Ask the DM when:
 - Create prompts for new major NPCs in `art/characters/`
 - Create prompts for new locations in `art/locations/`
 - Create prompts for new important scenes in `art/scenes/`, with `cast:` and `references:` naming existing titles
-- Embed each as `![Alt](art/<folder>/images/<title>.png)` and update the prompt counts in `art/README.md`
+- Embed each as `![Alt](art/<folder>/images/<title>.jpg)` and update the prompt counts in `art/README.md`
 
 **For changed content:**
 - If an NPC's or location's appearance changed, update its prompt file

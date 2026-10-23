@@ -395,13 +395,13 @@ campaigns/my-campaign/art/
 ├── README.md                   # how to generate every image for this campaign
 ├── styles/campaign.md          # style directive applied to every prompt
 ├── characters/captain-harrow.md        # kind: character (title = file name)
-├── characters/images/captain-harrow.png  # the pick, linked from npcs.md
+├── characters/images/captain-harrow.jpg  # the pick, linked from npcs.md
 ├── locations/harbor-district.md        # kind: location
 ├── scenes/ambush-at-the-docks.md       # kind: scene, cast: [captain-harrow], references: [harbor-district]
 └── items/ maps/                        # optional
 ```
 
-Titles are unique across `art/` and equal the file name; there are no numeric prefixes, because dndig generates every character and place before the scenes that need it. The image of `art/<folder>/<title>.md` is always `art/<folder>/images/<title>.png`, so campaign documents link to that path before the image exists. Do not run `dndig init` in a campaign (it adds sample prompts).
+Titles are unique across `art/` and equal the file name; there are no numeric prefixes, because dndig generates every character and place before the scenes that need it. The image of `art/<folder>/<title>.md` is always `art/<folder>/images/<title>.jpg`, so campaign documents link to that path before the image exists. Do not run `dndig init` in a campaign (it adds sample prompts).
 
 ```bash
 cd campaigns/my-campaign/art
@@ -428,7 +428,7 @@ dndig refine characters/captain-harrow.md "make the scar longer"
 | Command | Does |
 |---------|------|
 | `generate <prompt.md\|dir>... [--takes N] [--dry-run] [--auto-pick]` | Generate candidate takes (a directory = the prompt files directly in it) |
-| `pick <prompt.md> --take N` | Approve a take; moves it to `images/<title>.png` beside the prompt |
+| `pick <prompt.md> --take N` | Approve a take; moves it to `images/<title>.jpg` beside the prompt |
 | `refine <prompt.md> "instruction" [--take N]` | Edit the pick (or a take) in conversation |
 | `sheet <prompt.md>` | Turnaround sheet of a character's pick, sent along with it into scenes |
 | `prune <prompt.md\|dir>... [--delete]` | Move unpicked takes to `discards/` |

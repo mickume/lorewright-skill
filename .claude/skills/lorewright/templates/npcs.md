@@ -18,7 +18,7 @@ These NPCs are central to the campaign's story and appear in multiple chapters.
 #### Appearance
 [2-4 sentences with distinctive physical features. Make them memorable.]
 
-![NPC Name](art/characters/images/npc-name.png)
+![NPC Name](art/characters/images/npc-name.jpg)
 
 #### Personality
 **Traits:** [2-3 personality traits]

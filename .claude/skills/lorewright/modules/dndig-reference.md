@@ -36,26 +36,26 @@ campaigns/[campaign-name]/art/
 ├── characters/                  # kind: character — NPC portraits
 │   ├── captain-harrow.md        # prompt file (title: captain-harrow)
 │   ├── images/
-│   │   └── captain-harrow.png   # the pick — linked from npcs.md
+│   │   └── captain-harrow.jpg   # the pick — linked from npcs.md
 │   └── captain-harrow/          # dndig workspace (created by dndig)
-│       ├── takes/001.png …      # every candidate, with JSON sidecars
+│       ├── takes/001.jpg …      # every candidate, with JSON sidecars
 │       ├── pick.json            # which take was picked
 │       └── sheet.png            # optional turnaround sheet
 ├── locations/                   # kind: location — establishing shots of places
 │   ├── harbor-district.md
-│   └── images/harbor-district.png
+│   └── images/harbor-district.jpg
 ├── items/                       # kind: item — artifacts, handouts (optional)
 ├── maps/                        # kind: other — region and battle maps (optional)
 └── scenes/                      # kind: scene — encounters and read-aloud moments
     ├── ambush-at-the-docks.md   # cast: [captain-harrow]
-    └── images/ambush-at-the-docks.png
+    └── images/ambush-at-the-docks.jpg
 ```
 
 **Why `art/` and not the campaign root is the project:** dndig indexes every Markdown file under its root and requires unique titles across them. Keeping the project in `art/` keeps chapters, `npcs.md` and other campaign documents out of that index.
 
 **Rules that make the layout work:**
 
-1. **File name = title.** `characters/captain-harrow.md` has `title: captain-harrow`. dndig names the pick after the file (`images/captain-harrow.png`) and resolves `cast:` and `references:` by title; keeping both identical makes every path predictable.
+1. **File name = title.** `characters/captain-harrow.md` has `title: captain-harrow`. dndig names the pick after the file (`images/captain-harrow.jpg`) and resolves `cast:` and `references:` by title; keeping both identical makes every path predictable.
 2. **Titles are unique across all of `art/`.** Letters, digits, `-` and `_` only. Use lowercase kebab-case.
 3. **No numeric prefixes.** dndig orders a run by dependency (a scene's `cast:` and title `references:` are generated first), so `01_` prefixes are unnecessary — and they would leak into the image file names.
 4. **One folder per kind.** Only create the folders the campaign needs; `characters/`, `locations/` and `scenes/` are the usual minimum.
@@ -187,7 +187,7 @@ Run every command from the campaign's `art/` directory (dndig finds the project 
 |---------|------|
 | `dndig status` | Every prompt with its kind, take count, pick, and missing casts |
 | `dndig generate <prompt.md\|dir>... [--takes N] [--dry-run] [--auto-pick]` | Generate candidate takes. A directory means every prompt file directly inside it (not recursive) |
-| `dndig pick <prompt.md> --take N` | Approve a take: moves it to `images/<title>.png` beside the prompt |
+| `dndig pick <prompt.md> --take N` | Approve a take: moves it to `images/<title>.jpg` beside the prompt |
 | `dndig refine <prompt.md> "instruction" [--take N]` | Edit a take in conversation (default: the pick, else the latest take) |
 | `dndig sheet <prompt.md>` | Front/side/back turnaround of a character's pick; travels with the pick into scenes |
 | `dndig prune <prompt.md\|dir>... [--delete]` | Move unpicked takes to `discards/` (or delete them) |
@@ -215,12 +215,12 @@ Flags shared by `generate`, `refine` and `sheet`: `--model ID` and `--dry-run` (
 
 ## Linking Images into Campaign Content
 
-The pick of `art/<folder>/<title>.md` is `art/<folder>/images/<title>.png`. Link it with that path from the campaign root:
+The pick of `art/<folder>/<title>.md` is `art/<folder>/images/<title>.jpg`. Link it with that path from the campaign root:
 
 ```markdown
-![Captain Harrow](art/characters/images/captain-harrow.png)
-![The Harbor District](art/locations/images/harbor-district.png)
-![Ambush at the Docks](art/scenes/images/ambush-at-the-docks.png)
+![Captain Harrow](art/characters/images/captain-harrow.jpg)
+![The Harbor District](art/locations/images/harbor-district.jpg)
+![Ambush at the Docks](art/scenes/images/ambush-at-the-docks.jpg)
 ```
 
 The path is known before any image exists, so lorewright writes the links when it writes the prompts. Gemini returns PNG; if a pick has another extension (images imported from elsewhere, or older dndig output), the link uses that extension.

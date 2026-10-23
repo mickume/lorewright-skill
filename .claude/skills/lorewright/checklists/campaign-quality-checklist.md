@@ -106,7 +106,7 @@ At minimum, a campaign should have:
   - [ ] Chapters link to NPCs document
   - [ ] Chapters link to locations document
   - [ ] Chapters link to each other
-  - [ ] Every `![...](art/<folder>/images/<title>.png)` image reference has a matching prompt file `art/<folder>/<title>.md`
+  - [ ] Every `![...](art/<folder>/images/<title>.jpg)` image reference has a matching prompt file `art/<folder>/<title>.md`
   - [ ] Every art prompt file (excluding `styles/` and `README.md`) is referenced by at least one image embed in content
 
 - [ ] NPC references are accurate
@@ -331,7 +331,7 @@ For each chapter, check that:
 - [ ] Prompts sit in the folder for their kind (`characters/`, `locations/`, `scenes/`, `items/`, `maps/`), with unique titles and no numeric prefixes
 - [ ] Scenes list featured NPCs under `cast:` (≤5) and reused places under `references:`, by existing titles
 - [ ] `art/README.md` lists the campaign's real folders and the commands to generate every image
-- [ ] **Every art prompt file has at least one `![...](art/<folder>/images/<title>.png)` reference in campaign content** (no orphaned prompts)
+- [ ] **Every art prompt file has at least one `![...](art/<folder>/images/<title>.jpg)` reference in campaign content** (no orphaned prompts)
 - [ ] **Every `![...](art/...)` reference in content has a matching art prompt** with the same folder and title (no broken image links)
 - [ ] NPC portraits are placed after the NPC's appearance description in `npcs.md`
 - [ ] Scene/location images are placed after the read-aloud text in chapters and/or `locations.md`

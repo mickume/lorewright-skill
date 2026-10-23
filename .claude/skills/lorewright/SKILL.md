@@ -111,13 +111,13 @@ campaigns/[campaign-name]/
     ├── styles/campaign.md       # Campaign style directive
     ├── characters/              # NPC portraits (kind: character)
     │   ├── [npc-name].md
-    │   └── images/[npc-name].png        # Approved image (dndig pick)
+    │   └── images/[npc-name].jpg        # Approved image (dndig pick)
     ├── locations/               # Places (kind: location)
     │   ├── [location-name].md
-    │   └── images/[location-name].png
+    │   └── images/[location-name].jpg
     ├── scenes/                  # Encounters and read-aloud moments (kind: scene)
     │   ├── [scene-name].md      # cast: [npc-name], references: [location-name]
-    │   └── images/[scene-name].png
+    │   └── images/[scene-name].jpg
     ├── items/                   # Artifacts and handouts (optional, kind: item)
     └── maps/                    # Region and battle maps (optional, kind: other)
 ```
@@ -283,7 +283,7 @@ references/
 - Match the style of examples
 
 **Integrate All Artwork into Content**
-- Every art prompt `art/<folder>/<title>.md` must have a matching `![...](art/<folder>/images/<title>.png)` reference in the campaign text
+- Every art prompt `art/<folder>/<title>.md` must have a matching `![...](art/<folder>/images/<title>.jpg)` reference in the campaign text
 - Every image reference in chapters, npcs.md, or locations.md must have a matching art prompt
 - Place NPC portraits after appearance descriptions, scene images after read-aloud text
 - Image paths are fixed by folder and title, so write them when you write the prompts — they need no update after generation
@@ -460,7 +460,7 @@ Name the cast and describe what they do — not what they look like.
 - `cast:` holds at most 5 characters (3 or fewer keeps faces reliable); 14 images per request in total
 - Resolutions: `1K`, `2K`, `4K`. Aspect ratios: `1:1 2:3 3:2 3:4 4:3 4:5 5:4 9:16 16:9 21:9 1:4 4:1 1:8 8:1`
 
-**Image links:** the pick of `art/<folder>/<title>.md` is `art/<folder>/images/<title>.png` — e.g. `![Captain Harrow](art/characters/images/captain-harrow.png)`.
+**Image links:** the pick of `art/<folder>/<title>.md` is `art/<folder>/images/<title>.jpg` — e.g. `![Captain Harrow](art/characters/images/captain-harrow.jpg)`.
 
 **Generating (the DM runs this; it needs `GEMINI_API_KEY`):**
 ```bash
