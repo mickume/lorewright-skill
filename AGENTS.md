@@ -382,39 +382,6 @@ The rules exist to serve the story. The story exists to serve the players. The p
 - **Commit discipline:** only commit files relevant to the current change.
 - **Never add `Co-Authored-By` lines.** No AI attribution in commits — ever.
 
-### lorepages — Static Site Generator
-
-`lorepages` converts a campaign directory into a navigable HTML website. It understands the campaign file conventions (chapters, NPCs, locations, factions, etc.) and produces a themed, interlinked site that a DM can browse at the table or share with players.
-
-```bash
-# Build the full DM site (includes spoilers, DM notes, secrets)
-lorepages build campaigns/my-campaign/
-
-# Build a player-safe version (strips DM-only content)
-lorepages build campaigns/my-campaign/ --mode player
-
-# Specify a custom output directory
-lorepages build campaigns/my-campaign/ -o /tmp/my-campaign-site/
-
-# Use a different theme
-lorepages build campaigns/my-campaign/ --theme parchment
-
-# Set a base URL for deployment
-lorepages build campaigns/my-campaign/ --base-url /campaigns/my-campaign/
-```
-
-**Key options:**
-
-| Flag | Description | Default |
-|------|-------------|---------|
-| `-o, --output-dir DIR` | Where to write the generated site | `<campaign-dir>/_site/` |
-| `--mode {dm,player}` | `dm` includes all content; `player` strips spoilers | `dm` |
-| `--theme NAME` | Theme name or path to custom theme directory | built-in default |
-| `--base-url URL` | Base URL prefix for all links | `/` |
-| `-v, --verbose` | Verbose output during build | off |
-
-The output lands in `_site/` inside the campaign directory by default. Open `index.html` in a browser to preview.
-
 ### dndig — AI Image Generation
 
 [`dndig`](https://github.com/mickume/dndig) generates campaign artwork with Google's Gemini image models, with **continuity**: an approved character portrait (a *pick*) is sent as a labelled reference image to every scene that lists the character in `cast:`.
