@@ -206,4 +206,4 @@
 - [Appendix D: Custom Magic Items](magic-items.md)
 - [Appendix E: Custom Monsters](monsters.md)
 - [Appendix F: Handouts](handouts/)
-- [Appendix G: Maps & Art](art/)
+- [Appendix G: Maps & Art](art/README.md)

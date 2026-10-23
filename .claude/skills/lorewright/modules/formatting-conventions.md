@@ -64,7 +64,7 @@ party avoided the trap in Area 3, the golem is already active and hostile.
 
 ### 3. Image Placeholder
 ```markdown
-![Grand Hall](art/images/grand-hall.jpg)
+![Grand Hall](art/locations/images/grand-hall.png)
 ```
 
 ### 4. DM Information
@@ -93,7 +93,7 @@ party avoided the trap in Area 3, the golem is already active and hostile.
 > is thick with dust and the faint smell of decay. Your footsteps echo in the
 > oppressive silence.
 
-![Grand Hall](art/images/grand-hall.jpg)
+![Grand Hall](art/locations/images/grand-hall.png)
 
 This hall once served as the throne room of the ancient king. The carvings on the
 columns tell the story of his conquests (DC 12 History reveals this).
@@ -118,29 +118,38 @@ the columns (MM p.269).
 
 **Purpose:** Detailed prompts for AI image generation tools
 
-**Location:** `campaigns/[campaign-name]/art/[scene-name].md`
+**Location:** `campaigns/[campaign-name]/art/<folder>/<title>.md`, where `<folder>` is `characters/`, `locations/`, `scenes/`, `items/` or `maps/`. The `art/` directory is a dndig project; see [dndig-reference.md](dndig-reference.md).
 
-**Format:**
+**Format** (`art/locations/grand-hall.md`):
 ```markdown
 ---
-title: grand-hall              # Output filename prefix (required)
-aspect_ratio: "4:3"            # Options: 16:9, 9:16, 1:1, 4:3, 3:4
-resolution: 2K                 # Options: 1K, 2K, 4K
-instructions: dark-fantasy.md  # Optional style instructions file
+title: grand-hall              # = file name; unique across art/; names the image
+kind: location                 # character | scene | location | item | other
+aspect_ratio: "4:3"            # 1:1 2:3 3:2 3:4 4:3 4:5 5:4 9:16 16:9 21:9 …
+resolution: 2K                 # 1K, 2K, 4K
+takes: 2                       # candidates to choose from
 ---
 
 A vast medieval throne room with vaulted ceilings lost in shadow. Rows of
 massive stone columns carved with battle scenes march toward a raised dais.
 Dust motes drift through shafts of dim light from high windows. The floor
 is cracked marble, and shadows pool in the corners. Atmosphere: abandoned,
-ancient, ominous. Style: dark fantasy, detailed, realistic.
+ancient, ominous.
+```
+
+A scene that features NPCs or reuses a place names them by title:
+
+```yaml
+cast: [captain-harrow, sister-vael]   # their approved portraits keep faces consistent
+references: [grand-hall]              # the approved location image keeps the architecture
 ```
 
 **Guidelines:**
 - Base the prompt on the read-aloud text
-- Add specific visual style guidance
-- Include atmosphere and mood
+- Include atmosphere, mood, composition, camera angle and lighting
 - Specify important visual elements
+- Leave the art style to `art/styles/campaign.md`; don't repeat it per prompt
+- In scenes, describe what the cast does, not what they look like
 - Keep it detailed but focused
 
 ---
@@ -151,11 +160,11 @@ Art prompts and content are a **closed loop**: every art prompt must be referenc
 
 ### Rules
 
-1. **Every art prompt file → at least one image reference in content.** If you create `art/03_harbor-district.md`, the generated image must appear somewhere in the campaign text (chapter, locations.md, or npcs.md).
+1. **Every art prompt file → at least one image reference in content.** If you create `art/locations/harbor-district.md`, the generated image must appear somewhere in the campaign text (chapter, locations.md, or npcs.md).
 
-2. **Every image reference in content → a matching art prompt.** If a chapter contains `![Harbor District](art/images/harbor-district.jpg)`, there must be an art prompt file whose `title` field is `harbor-district`.
+2. **Every image reference in content → a matching art prompt.** If a chapter contains `![Harbor District](art/locations/images/harbor-district.png)`, there must be an art prompt file `art/locations/harbor-district.md` with `title: harbor-district`.
 
-3. **The art prompt's `title` field determines the image filename prefix.** The image reference path must use this same prefix. After running dndig, update references to use the actual generated filename (e.g., `harbor-district_20240315_144500_1.png`).
+3. **The prompt's folder and title determine the image path.** dndig saves the approved image (the pick) of `art/<folder>/<title>.md` as `art/<folder>/images/<title>.png`. The path is known before generation, so write it when you write the prompt; it never changes when an image is regenerated.
 
 ### Placement Rules
 
@@ -173,18 +182,19 @@ Insert images in content at the point where they have the most impact for the DM
 ### Image Reference Format
 
 ```markdown
-![Descriptive Alt Text](art/images/filename.png)
+![Descriptive Alt Text](art/<folder>/images/<title>.png)
 ```
 
 - **Alt text** should describe the subject concisely (e.g., "Captain Harrow", "The Grand Hall", "Ambush at the Docks")
 - **Path** is always relative to the campaign root directory
+- **Extension** is `.png` (what Gemini returns); use another extension only when the pick on disk has one
 
 ### Verification
 
 Before marking art work complete, verify:
-- Every `.md` file in `art/` (excluding `campaign-style.md`) has at least one matching `![...](art/images/...)` reference in the campaign content
-- Every `![...](art/images/...)` reference in chapters, npcs.md, and locations.md has a corresponding art prompt file in `art/`
-- Image references point to files that exist in `art/images/` (or use the prompt's `title` as placeholder before generation)
+- Every prompt file under `art/` (excluding `styles/` and `README.md`) has at least one matching `![...](art/<folder>/images/<title>.png)` reference in the campaign content
+- Every `![...](art/...)` reference in chapters, npcs.md, and locations.md matches the folder and title of a prompt file
+- Every `cast:` and `references:` entry names an existing prompt title (`dndig status` shows unknown ones under `needs:`)
 
 ---
 
@@ -231,7 +241,7 @@ flowchart LR
 For detailed battle maps or location maps:
 
 ```markdown
-![Dungeon Level 1 Map](art/images/dungeon-level-1-map.jpg)
+![Dungeon Level 1 Map](art/maps/images/dungeon-level-1-map.png)
 
 **Map Key:**
 - Green squares: Safe areas
@@ -308,7 +318,7 @@ or a second wave of enemies.
 
 ## Cross-References and Navigation
 
-Campaign documents should be richly cross-linked so a DM can navigate between related content in one click — whether reading the raw markdown or the HTML pages generated by lorepages. Every named NPC, location, faction, and chapter reference is a potential link.
+Campaign documents should be richly cross-linked so a DM can navigate between related content in one click — whether reading the raw markdown or an HTML rendering of it. Every named NPC, location, faction, and chapter reference is a potential link.
 
 ### The First-Mention Rule
 
@@ -425,12 +435,13 @@ magic-items.md              # Custom magic items
 appendix-monsters.md        # Custom monster stat blocks
 ```
 
-**For art prompts:**
+**For art prompts** (file name = `title`, lowercase kebab-case, unique across `art/`, no numeric prefixes):
 ```
-art/entrance-hall.md
-art/throne-room.md
-art/npc-villain-name.md
-art/map-dungeon-level-1.md
+art/characters/npc-villain-name.md
+art/locations/entrance-hall.md
+art/scenes/throne-room-confrontation.md
+art/items/sunblade.md
+art/maps/dungeon-level-1.md
 ```
 
 ---

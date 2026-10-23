@@ -19,7 +19,7 @@ A crumbling watchtower from an era no one remembers, surrounded by a shimmering 
 
 The Waystation is one of a dozen Pylon outposts the Old Ones built along the Ley Beam network, designed as maintenance stations and shelters. This is the only one still functioning, kept alive by [Aldric Vane](npcs.md#aldric-vane)'s decades of solitary work channeling what little Beam energy reaches this far from an active Pylon.
 
-![The Waystation](art/images/the-waystation.jpg)
+![The Waystation](art/locations/images/the-waystation.jpg)
 
 #### Atmosphere & Mood
 
@@ -76,7 +76,7 @@ The Ashlands are what remains of the countryside after the Fracturing and the su
 
 The Ashlands are not uniformly hostile — there are pockets of normalcy, places where a stream still runs clear or a stand of trees still grows green. But these pockets are shrinking, and the wrongness between them is getting worse.
 
-![The Ashlands](art/images/the-ashlands.jpg)
+![The Ashlands](art/locations/images/the-ashlands.jpg)
 
 #### Atmosphere & Mood
 
@@ -132,7 +132,7 @@ Loom is a city that exists in temporal flux. Named because reality here is "wove
 
 The settlement survives because Elder Soraya anchored a stable core around the Council Hall using Beam-shard fragments. Within this core, reality holds. Beyond it, the phasing makes navigation treacherous and daily life a constant negotiation with temporal uncertainty.
 
-![Loom](art/images/loom.jpg)
+![Loom](art/locations/images/loom.jpg)
 
 #### Atmosphere & Mood
 
@@ -179,7 +179,7 @@ An Old Ones facility repurposed by the Unravelers as a Breaker Station. Built in
 
 The station was originally an Old Ones "Harmonic Dampener" — a facility designed to modulate Beam resonance during the planned transition period. The Unravelers reversed its function, turning a tool of calibration into a weapon of destruction.
 
-![Breaker Station Terminus](art/images/breaker-station.jpg)
+![Breaker Station Terminus](art/locations/images/breaker-station.jpg)
 
 #### Atmosphere & Mood
 
@@ -223,7 +223,7 @@ One of the six Eld Pylons built by the Old Ones to anchor the Ley Beams. The Pyl
 
 The Pylon's interior is a vertical dungeon: a progression from the Entry Hall at ground level through the Resonance Chamber, Armory, and Memory Banks to the Control Chamber at the top. The architecture is the Old Ones at their most impressive — crystalline geometry that is simultaneously technology, art, and something approaching prayer.
 
-![The Eld Pylon of Keth](art/images/eld-pylon.jpg)
+![The Eld Pylon of Keth](art/locations/images/eld-pylon.jpg)
 
 #### Atmosphere & Mood
 

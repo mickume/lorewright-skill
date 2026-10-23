@@ -106,8 +106,8 @@ At minimum, a campaign should have:
   - [ ] Chapters link to NPCs document
   - [ ] Chapters link to locations document
   - [ ] Chapters link to each other
-  - [ ] Every `![...](art/images/...)` image reference has a matching art prompt file in `art/`
-  - [ ] Every art prompt file (excluding style files) is referenced by at least one image embed in content
+  - [ ] Every `![...](art/<folder>/images/<title>.png)` image reference has a matching prompt file `art/<folder>/<title>.md`
+  - [ ] Every art prompt file (excluding `styles/` and `README.md`) is referenced by at least one image embed in content
 
 - [ ] NPC references are accurate
   - [ ] NPCs appear in chapters where stated
@@ -326,13 +326,17 @@ For each chapter, check that:
 - [ ] Important locations have image prompts
 - [ ] Major NPCs have image prompts
 - [ ] Prompts are detailed and useful
-- [ ] Prompts include proper metadata
-- [ ] **Every art prompt file has at least one `![...](art/images/...)` reference in campaign content** (no orphaned prompts)
-- [ ] **Every `![...](art/images/...)` reference in content has a matching art prompt** in `art/` (no broken image links)
+- [ ] Prompts include proper metadata (`title` = file name, `kind`, `aspect_ratio`, `resolution`, `takes`; only dndig's fields)
+- [ ] `art/` is a dndig project: `dndig.yaml`, `.gitignore`, `styles/campaign.md`, `README.md`
+- [ ] Prompts sit in the folder for their kind (`characters/`, `locations/`, `scenes/`, `items/`, `maps/`), with unique titles and no numeric prefixes
+- [ ] Scenes list featured NPCs under `cast:` (≤5) and reused places under `references:`, by existing titles
+- [ ] `art/README.md` lists the campaign's real folders and the commands to generate every image
+- [ ] **Every art prompt file has at least one `![...](art/<folder>/images/<title>.png)` reference in campaign content** (no orphaned prompts)
+- [ ] **Every `![...](art/...)` reference in content has a matching art prompt** with the same folder and title (no broken image links)
 - [ ] NPC portraits are placed after the NPC's appearance description in `npcs.md`
 - [ ] Scene/location images are placed after the read-aloud text in chapters and/or `locations.md`
 - [ ] Encounter images are placed after the encounter intro read-aloud text
-- [ ] Image paths point to actual files in `art/images/` (after generation)
+- [ ] `dndig status` (if installed) lists every prompt with no `unknown` entries under `needs:`
 
 ### Supporting Materials
 

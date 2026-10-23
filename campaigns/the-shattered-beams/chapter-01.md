@@ -143,7 +143,7 @@ After all vignettes are complete, pause for a beat of silence. Then:
 >
 > "Don't try to stand yet," he says. His voice is quiet and measured, each word chosen the way a mason chooses stones -- carefully, with weight. "The Door takes something out of you. It puts it back, eventually. But for now... sit. Breathe." A pause. He looks into the fire. "You'll have questions. I'll answer what I can."
 
-![The Waystation Interior](art/images/waystation-interior.jpg)
+![The Waystation Interior](art/scenes/images/waystation-interior.jpg)
 
 ### DM Information
 
@@ -261,7 +261,7 @@ This is the players' space. Let them introduce their characters to each other. A
 >
 > "I can't fight and hold the barrier. I need you to get to the courtyard. Seal the breach before more of them get through." His eyes find each of you in turn. "Please."
 
-![The Thinny Breach](art/images/thinny-breach.jpg)
+![The Thinny Breach](art/scenes/images/thinny-breach.jpg)
 
 ### DM Information
 

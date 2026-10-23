@@ -39,7 +39,7 @@
 > [Read-aloud text: Detailed, verbose description that engages multiple senses.
 > This sets the scene and creates atmosphere. Use present tense for immediacy.]
 
-![Scene Name](art/images/scene-name.jpg)
+![Scene Name](art/scenes/images/scene-name.png)
 
 ### DM Information
 
@@ -100,7 +100,7 @@
 ### Introduction
 > [Read-aloud text]
 
-![Scene Name](art/images/scene-name.jpg)
+![Scene Name](art/scenes/images/scene-name.png)
 
 ### DM Information
 [Details, secrets, possible actions]
@@ -128,7 +128,7 @@
 
 > [Read-aloud text for the climax]
 
-![Climactic Scene](art/images/climactic-scene.jpg)
+![Climactic Scene](art/scenes/images/climactic-scene.png)
 
 ### The Challenge
 

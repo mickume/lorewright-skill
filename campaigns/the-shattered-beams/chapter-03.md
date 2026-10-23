@@ -43,7 +43,7 @@
 >
 > Ahead, near the center of the settlement, a building of stone and crystal radiates steady warmth — the one structure that doesn't shimmer, doesn't phase, doesn't breathe between versions of itself. The Council Hall. An anchor in a city made of maybes.
 
-![Loom — the city phases between eras as the party approaches](art/images/loom-arrival.jpg)
+![Loom — the city phases between eras as the party approaches](art/scenes/images/loom-arrival.jpg)
 
 ### DM Information
 
@@ -92,7 +92,7 @@ This scene establishes Loom's atmosphere and the unsettling wonder of temporal f
 >
 > "You came from the Ashlands. On foot. Which means you're either desperate, foolish, or someone sent you." A pause. Those dark eyes settle on the chrono-compass if it's visible. "Or all three. Sit down. Tell me what you want — quickly. I have a city that's trying to become three cities at once, and my patience is rationed along with everything else."
 
-![Elder Soraya in the Council Hall](art/images/elder-soraya.jpg)
+![Elder Soraya in the Council Hall](art/characters/images/elder-soraya.jpg)
 
 ### DM Information
 
@@ -153,7 +153,7 @@ This is the chapter's central social encounter. Soraya is the gatekeeper — she
 >
 > A child tugs your sleeve. Present-day, small, missing a front tooth. "Don't buy from the shiny ones," she whispers. "Their money goes funny in your pocket. Turns to sand."
 
-![The Phasing Market — merchants from different eras sell wares side by side](art/images/phasing-market.jpg)
+![The Phasing Market — merchants from different eras sell wares side by side](art/scenes/images/phasing-market.jpg)
 
 ### DM Information
 
@@ -223,7 +223,7 @@ If the check fails, the party catches fragments — "compass," "finds," and a wo
 >
 > "Soraya sent you? She sent you. Yes. I can see — you're them, aren't you. The Drawn. The ones the Constant pulled through. I've been waiting — we've been waiting. Close the door. *Please* close the door."
 
-![Jorin's Apothecary](art/images/jorins-apothecary.jpg)
+![Jorin's Apothecary](art/scenes/images/jorins-apothecary.jpg)
 
 ### DM Information
 

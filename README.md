@@ -30,20 +30,22 @@ Then describe what you want to create — a full campaign, a one-shot adventure,
 
 ## Art generation with dndig
 
-Lorewright creates image prompts for campaign artwork (NPC portraits, scenes, maps). To generate the actual images, install [dndig](https://github.com/mickume/dndig):
+Lorewright writes each campaign's `art/` directory as a [dndig](https://github.com/mickume/dndig) project: a style directive, one prompt file per NPC, location and scene, and an `art/README.md` with the commands to generate every image. dndig keeps characters consistent across scenes by sending each approved portrait along as a reference image.
 
-Requires Python 3.10+, `uv` and a [Google Gemini API key](https://aistudio.google.com/apikey).
-
-Install directly from the repository:
+Requires Go 1.26+ and a [Google Gemini API key](https://aistudio.google.com/apikey):
 
 ```bash
-uv tool install git+https://github.com/mickume/dndig.git
+git clone https://github.com/mickume/dndig.git
+cd dndig && make install          # installs ~/go/bin/dndig
+export GEMINI_API_KEY=...
 ```
 
-Then point it at a campaign's art directory:
+Then generate a campaign's art from its `art/` directory:
 
 ```bash
-dndig campaigns/my-campaign/art/
+cd campaigns/my-campaign/art
+dndig status                                              # what there is to generate
+dndig generate characters/ locations/ scenes/ --auto-pick # everything, in dependency order
 ```
 
-See the [dndig repo](https://github.com/mickume/dndig) for full documentation.
+See the campaign's `art/README.md` for the curated workflow (choosing the best take of each portrait before scenes reuse it), and the [dndig repo](https://github.com/mickume/dndig) for full documentation.

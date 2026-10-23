@@ -210,10 +210,22 @@ Ask the DM when:
 
 ### Step 9: Add Image Prompts
 
-**For new significant content:**
-- Create image prompts for new locations
-- Create prompts for new major NPCs
-- Create prompts for new important scenes
+**For new significant content** (see [dndig-reference.md](../modules/dndig-reference.md)):
+- Create prompts for new major NPCs in `art/characters/`
+- Create prompts for new locations in `art/locations/`
+- Create prompts for new important scenes in `art/scenes/`, with `cast:` and `references:` naming existing titles
+- Embed each as `![Alt](art/<folder>/images/<title>.png)` and update the prompt counts in `art/README.md`
+
+**For changed content:**
+- If an NPC's or location's appearance changed, update its prompt file
+- List the scenes that depend on it (`grep -l "<title>" art/scenes/*.md`) — they need regenerating after its new pick
+- If an NPC or location is removed, delete its prompt and remove its title from every `cast:` and `references:`
+
+**Tell the DM which images to regenerate**, as commands run from `art/`:
+```bash
+dndig generate characters/<title>.md      # then: dndig pick characters/<title>.md --take N
+dndig generate scenes/<scene>.md          # each dependent scene, after the new pick
+```
 
 ---
 

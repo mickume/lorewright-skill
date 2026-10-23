@@ -101,27 +101,28 @@ Each chapter typically includes:
 
 **Location/Scene Description**
 - Very detailled and verbose description, it has inspire the player's imagination. It also serves as prompt for AI image generation.
-- Insert an image reference (`![Alt Text](art/images/filename.png)`) immediately after the read-aloud text. Before generation, use the prompt's `title` as a placeholder filename; after generation, update to the actual filename.
+- Insert an image reference immediately after the read-aloud text, pointing at the pick dndig will produce: `![Alt Text](art/scenes/images/<title>.png)`. The path is fixed by the prompt's folder and title, so it is correct before the image exists.
 
 **Art Prompts**
-- An individual markdown file per subject (NPC, location, scene, encounter)
-- All files use a numbered prefix: `01_name.md`, `02_name.md`, etc.
-- **NPCs are always numbered first** so portraits are generated before scenes/encounters
-- When a scene or encounter features a previously generated NPC, add the NPC's image path to `references` in the frontmatter for visual continuity
-- **Every art prompt must be referenced** by at least one `![...](art/images/...)` embed in the campaign content (chapters, npcs.md, or locations.md)
+- The campaign's `art/` directory is a [dndig](modules/dndig-reference.md) project: `dndig.yaml`, `.gitignore`, `README.md` (from [templates/art-README.md](templates/art-README.md)) and `styles/campaign.md` at its root
+- One markdown file per subject, in a folder per kind: `characters/`, `locations/`, `scenes/`, and optionally `items/` and `maps/`
+- File name = `title`, lowercase kebab-case, unique across all of `art/`; no numeric prefixes (dndig orders runs by dependency)
+- A scene lists the characters in it under `cast:` and the places it reuses under `references:` (by title), so their approved portraits travel with it as reference images
+- **Every art prompt must be referenced** by at least one `![...](art/<folder>/images/<title>.png)` embed in the campaign content (chapters, npcs.md, or locations.md)
 - **Every image embed in content must have a matching art prompt** — no image references without a corresponding prompt file
 
 ```markdown
 ---
-title: location             # Output filename prefix (required)
-aspect_ratio: "4:3"         # Options: 16:9, 9:16, 1:1, 4:3, 3:4
-resolution: 1K              # Options: 1K, 2K, 4K
-instructions: [campaign]_instr.md  # Optional style instructions file
-references:                 # Optional — include generated NPC images for continuity
-  - images/npc-name_timestamp_1.png
+title: ambush-at-the-docks  # = file name (scenes/ambush-at-the-docks.md); unique in art/
+kind: scene                 # character | scene | location | item | other
+aspect_ratio: "16:9"        # see dndig-reference.md
+resolution: 2K              # 1K, 2K, 4K
+takes: 2                    # candidates to choose from
+cast: [captain-harrow]      # character titles whose picks keep faces consistent
+references: [harbor-district]  # other prompt titles or image files
 ---
 
-Your detailled and verbose description, it has to inspire the player's imagination, based on the description created for the DM.
+Your detailed and verbose description, it has to inspire the player's imagination, based on the description created for the DM. Name the cast and describe what they do, not what they look like.
 ```
 
 **Image Placement:**
@@ -148,7 +149,7 @@ Your detailled and verbose description, it has to inspire the player's imaginati
 
 ## Cross-Linking Conventions
 
-Campaign documents should be richly cross-linked to support navigation in both raw markdown and HTML/PDF/ebook exports (via lorepages). Follow these rules:
+Campaign documents should be richly cross-linked to support navigation in both raw markdown and HTML/PDF/ebook exports. Follow these rules:
 
 **First-mention rule:** In each chapter, link the first mention of every named NPC to `npcs.md#anchor`, every named location to `locations.md#anchor`, and every faction to `factions.md#anchor`. Subsequent mentions in the same chapter do not need links.
 

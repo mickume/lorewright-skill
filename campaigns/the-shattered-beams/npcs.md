@@ -18,7 +18,7 @@ These NPCs are central to the campaign's story and appear in multiple chapters.
 #### Appearance
 A tall, gaunt man in his late sixties with a scholar's stoop and a soldier's hands. His white hair is pulled back in a loose knot, his skin weathered to the color of old parchment. His eyes are pale blue — the color of ice on a lake — and they carry the particular focus of someone who has spent decades watching for something specific. A thin scar runs from his left temple to his jaw, old and well-healed. He wears a faded blue robe over practical traveling clothes, and his fingers are stained with crystalline residue from years of maintaining the Waystation's barrier.
 
-![Aldric Vane](art/images/aldric-vane.jpg)
+![Aldric Vane](art/characters/images/aldric-vane.jpg)
 
 #### Personality
 **Traits:** Patient, deliberate, quietly burdened
@@ -83,7 +83,7 @@ Then he saw what the early Breaker experiments did to people. He left the Unrave
 #### Appearance
 A lean, sharp-featured woman in her early forties. Dark hair cut short and practical, framing a face that is all angles — high cheekbones, narrow jaw, deep-set eyes the color of burnt amber. She moves with the economy of someone who has eliminated everything unnecessary from her life. She wears a long coat of dark grey over leather armor, and the Resonance Key hangs from a chain at her hip — a device of crystalline geometry that hums faintly when she touches it. There is nothing soft about her, but there is nothing cruel either. She looks like a woman who has made peace with a terrible decision.
 
-![Sera Mourne](art/images/sera-mourne.jpg)
+![Sera Mourne](art/characters/images/sera-mourne.jpg)
 
 #### Personality
 **Traits:** Brilliant, driven, unflinching. Compassionate in principle if not always in practice.
@@ -156,7 +156,7 @@ She is not a sadist. She does not enjoy the Breakers' suffering. But she has dec
 #### Appearance
 Young — sixteen years old, though weeks in the Breaker chair have aged her beyond her years. Gaunt face, shaved head (the chair's tendrils require direct contact), dark circles under luminous grey eyes that seem to look *through* things rather than at them. Tall and thin, she moves with the unsteadiness of someone relearning their body. Her hands tremble constantly. She wears the shapeless grey shift the Breakers are given, and her wrists bear the marks of the chair's restraints.
 
-![Wren](art/images/wren.jpg)
+![Wren](art/characters/images/wren.jpg)
 
 #### Personality
 **Traits:** Fragile but fierce. Perceptive to the point of discomfort. Quietly, stubbornly hopeful.
@@ -262,7 +262,7 @@ To do the right thing — he's just no longer sure what that is.
 #### Quick Description
 A medium-sized warforged of tarnished bronze and pale crystal. One eye glows faintly amber; the other is dark and cracked. Moss and lichen grow in the joints, and the surface is pitted with age. Geometric patterns are etched into the plating — Old Ones' script that no one alive can read, except Moth, in fragments.
 
-![Moth](art/images/moth.jpg)
+![Moth](art/characters/images/moth.jpg)
 
 #### Personality
 Confused, earnest, and slowly awakening. Moth's memory crystal is corroded — they speak in fragments, half-remembered phrases, and broken syntax. But beneath the damage, there is a gentle, curious intelligence trying to reassemble itself.

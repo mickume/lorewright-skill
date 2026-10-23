@@ -74,7 +74,7 @@ The game system determines stat block format, encounter math, skill/ability refe
 - [ ] Detail locations
 - [ ] Create factions
 - [ ] Write briefing document
-- [ ] Create image prompts and generate art with dndig
+- [ ] Write the dndig art project: style, prompts, art/README.md (generate images if `GEMINI_API_KEY` is set)
 - [ ] Quality check
 
 ### Step 1b: Read Reference Materials
@@ -106,16 +106,33 @@ Based on requirements, recommend a campaign type (see [modules/campaign-types.md
 Before writing any files, create the campaign directory structure:
 
 ```bash
-mkdir -p campaigns/[campaign-name]/{references,art/images,changelog}
+mkdir -p campaigns/[campaign-name]/{references,changelog,art/styles,art/characters,art/locations,art/scenes}
 ```
 
 This creates:
 ```
 campaigns/[campaign-name]/
 ├── references/       # Lore and rules reference materials (.md, .pdf)
-├── art/
-│   └── images/       # Generated images (dndig output)
+├── art/              # dndig project (see Step 10)
+│   ├── styles/       # Campaign style directive
+│   ├── characters/   # NPC portrait prompts
+│   ├── locations/    # Location prompts
+│   └── scenes/       # Scene and encounter prompts
 └── changelog/        # Documented changes
+```
+
+Add `art/items/` and `art/maps/` later only if the campaign gets item or map prompts. dndig creates each folder's `images/` directory when an image is picked.
+
+Then write the dndig project marker files, so `art/` is usable by dndig from the start:
+
+```bash
+cat > campaigns/[campaign-name]/art/dndig.yaml <<'YAML'
+# dndig project configuration for this campaign's art. Every key is optional.
+# model: gemini-3-pro-image          # image model when a prompt names none
+style: campaign                      # styles/campaign.md, applied to every prompt
+workers: 2                           # concurrent requests
+YAML
+printf '**/takes/\n**/discards/\n' > campaigns/[campaign-name]/art/.gitignore
 ```
 
 Campaign files (`campaign-overview.md`, chapters, `npcs.md`, etc.) are written directly into the campaign root as they are created in subsequent steps.
@@ -376,83 +393,107 @@ Using [templates/README.md](../templates/README.md):
 
 ### Step 10: Create Image Prompts
 
-For key locations, NPCs, and scenes. See [dndig-reference.md](../modules/dndig-reference.md) for full tool documentation.
+For key locations, NPCs, and scenes. The campaign's `art/` directory is a dndig project; see [dndig-reference.md](../modules/dndig-reference.md) for the full tool documentation.
 
-**10.1: Create Campaign Style File**
-- Create `art/campaign-style.md` with visual style instructions for consistency across all artwork
-- Reference this file from every prompt's `instructions` field
+**10.1: Write the Campaign Style**
+
+Create `art/styles/campaign.md` — the visual style every prompt shares (`dndig.yaml` applies it by default, so prompts don't name it):
+
+```markdown
+---
+name: campaign
+---
+[Medium and technique], [palette], [lighting], [composition tendencies],
+[mood], [how characters and architecture should look]. [What to avoid.]
+Do not add text, captions, borders or any decoration to the picture.
+```
 
 **10.2: Identify Visual Moments**
 - Major NPCs
 - Opening scenes
 - Important locations
 - Climactic encounters
+- Key items and maps (optional)
 
-**10.3: Write Prompts (NPCs First)**
+**10.3: Write Prompts**
 
-All prompt files use a numbered prefix (`01_`, `02_`, etc.). **NPCs are always numbered first** so their portraits are generated before any scene or encounter. When a later prompt features a previously generated NPC, add the NPC's image path to `references` in the frontmatter for visual continuity.
+One file per subject, in the folder for its kind. The file name is the `title` (lowercase kebab-case, unique across `art/`); there are no numeric prefixes — dndig generates characters and places before the scenes that need them.
 
-- Create NPC portrait prompts first (`01_npc-name.md`, `02_npc-name.md`, ...)
-- Then locations (`03_location-name.md`, ...)
-- Then encounters/scenes — reference generated NPC images when applicable
-- Base on read-aloud descriptions
-- Include style guidance, composition, lighting, mood
-- Use appropriate aspect ratios per content type (see dndig reference)
+| Subject | File | `kind` | `aspect_ratio` / `resolution` / `takes` |
+|---------|------|--------|-------------------------------------------|
+| NPC portrait | `art/characters/<npc>.md` | `character` | `"2:3"` / `2K` / `3` |
+| Location | `art/locations/<place>.md` | `location` | `"16:9"` or `"4:3"` / `2K` / `2` |
+| Scene / encounter | `art/scenes/<scene>.md` | `scene` | `"16:9"` / `2K` / `1`–`2` |
+| Item | `art/items/<item>.md` | `item` | `"1:1"` / `1K` / `2` |
+| Map | `art/maps/<map>.md` | `other` | `"1:1"` or `"4:3"` / `2K` / `2` |
 
-**NPC portrait format:**
+- Base the body on the read-aloud description; add composition, camera angle, lighting and focal point
+- Character prompts are the character bible: build, age, hair, scars, outfit, signature props, expression
+- Scene prompts list the NPCs in them under `cast:` (max 5, ideally 3 or fewer) and the places they reuse under `references:` — by title. Describe what the cast *does*, not what they look like; their approved portraits carry the look
+- Don't repeat the campaign style in each prompt
+
+**NPC portrait format** (`art/characters/captain-harrow.md`):
 ```markdown
 ---
 title: captain-harrow
+kind: character
 aspect_ratio: "2:3"
 resolution: 2K
-instructions: campaign-style.md
+takes: 3
 ---
 
 Detailed visual description of the NPC...
 ```
 
-**Scene/encounter format (referencing NPC):**
+**Scene/encounter format** (`art/scenes/ambush-at-the-docks.md`):
 ```markdown
 ---
 title: ambush-at-the-docks
+kind: scene
 aspect_ratio: "16:9"
 resolution: 2K
-instructions: campaign-style.md
-references:
-  - images/captain-harrow_20240315_143022_1.png
+takes: 2
+cast: [captain-harrow]
+references: [harbor-district]
 ---
 
 Captain Harrow stands at the edge of the pier, cutlass drawn...
 ```
 
-**10.4: Generate Images**
-```bash
-# All prompts in the art directory (NPCs processed first due to numbering)
-dndig campaigns/[campaign-name]/art/
+**10.4: Insert Image References into Content**
 
-# Or a single prompt
-dndig campaigns/[campaign-name]/art/[prompt-file].md
-```
+Every prompt's image path is known before generation: the pick of `art/<folder>/<title>.md` is `art/<folder>/images/<title>.png`. Embed it as you write the prompt:
 
-**10.5: Insert Image References into Content**
-
-After generating images, go back through the campaign documents and ensure every generated image is embedded at the right place. This step closes the loop between art creation and campaign content.
-
-For each art prompt file:
 1. Identify the corresponding location in the campaign text (chapter, npcs.md, or locations.md)
-2. Insert or update the `![Alt Text](art/images/filename.png)` reference using the actual generated filename
+2. Insert `![Alt Text](art/<folder>/images/<title>.png)`
 3. Follow the placement rules from [formatting-conventions.md](../modules/formatting-conventions.md#image-integration):
    - **NPC portraits** → after the appearance description in `npcs.md`
    - **Scene/location images** → after the read-aloud text in the chapter or `locations.md`
    - **Encounter images** → after the encounter intro in the chapter
    - **Maps** → in the map section of the location
 
-**10.6: Verify Image Integration**
+**10.5: Write `art/README.md`**
+
+Create it from [templates/art-README.md](../templates/art-README.md): fill in the campaign name, keep only the folders that exist, count the prompts in each, and use real titles in the example commands. This is the DM's instruction sheet for generating every image.
+
+**10.6: Validate and Generate**
+
+If `dndig` is installed, check the project (no API key needed):
+
+```bash
+cd campaigns/[campaign-name]/art
+dndig status                    # every prompt parses, titles are unique, casts resolve
+dndig generate characters/ --dry-run
+```
+
+`dndig status` must list every prompt file; an "unknown" entry under `needs:` is a typo in `cast:` or `references:`. If `GEMINI_API_KEY` is set and the DM wants the images now, follow `art/README.md` (curated, or unattended with `--auto-pick`). Otherwise leave generation to the DM.
+
+**10.7: Verify Image Integration**
 
 Cross-check that:
-- Every art prompt file (excluding `campaign-style.md`) has at least one `![...](art/images/...)` reference in the campaign content
-- Every `![...](art/images/...)` reference in chapters, npcs.md, and locations.md has a corresponding art prompt in `art/`
-- All image paths point to files that exist in `art/images/`
+- Every prompt file under `art/` (excluding `styles/` and `README.md`) has at least one `![...](art/<folder>/images/<title>.png)` reference in the campaign content
+- Every `![...](art/...)` reference in chapters, npcs.md, and locations.md has a corresponding prompt file whose folder and title match the path
+- Every scene's `cast:` and `references:` name existing prompt titles
 
 ### Step 11: Add Supporting Materials
 
@@ -546,12 +587,15 @@ campaigns/[campaign-name]/
 ├── references/                  # (optional) Lore and rules reference materials
 │   ├── *.md
 │   └── *.pdf
-├── art/
-│   ├── 01_[npc-name].md
-│   ├── 02_[scene-name].md
-│   ├── campaign-style.md
-│   └── images/
-│       └── [generated-images.jpg]
+├── art/                         # dndig project
+│   ├── dndig.yaml
+│   ├── .gitignore
+│   ├── README.md                # How to generate every image
+│   ├── styles/campaign.md
+│   ├── characters/[npc-name].md
+│   ├── locations/[location-name].md
+│   ├── scenes/[scene-name].md
+│   └── <folder>/images/         # Picks, after generation
 └── [optional additional files]
 ```
 
