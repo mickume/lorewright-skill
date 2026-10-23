@@ -149,7 +149,7 @@ Your detailed and verbose description, it has to inspire the player's imaginatio
 
 ## Cross-Linking Conventions
 
-Campaign documents should be richly cross-linked to support navigation in both raw markdown and HTML/PDF/ebook exports (via lorepages). Follow these rules:
+Campaign documents should be richly cross-linked to support navigation in both raw markdown and HTML/PDF/ebook exports. Follow these rules:
 
 **First-mention rule:** In each chapter, link the first mention of every named NPC to `npcs.md#anchor`, every named location to `locations.md#anchor`, and every faction to `factions.md#anchor`. Subsequent mentions in the same chapter do not need links.
 
