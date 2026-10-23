@@ -1,4 +1,0 @@
-# dndig project configuration for this campaign's art. Every key is optional.
-# model: gemini-3-pro-image          # image model when a prompt names none
-style: campaign                      # styles/campaign.md, applied to every prompt
-workers: 2                           # concurrent requests
