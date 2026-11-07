@@ -13,7 +13,7 @@ lorewright is a specialized skill designed to assist Dungeon Masters and creativ
 
 ### For New Campaigns
 
-1. **Use TaskCreate** immediately to create a planning checklist
+1. **Plan the phases** as a task list; a campaign spans many files
 2. **Create the directory structure** — run `mkdir -p campaigns/[name]/{references,changelog,art/styles,art/characters,art/locations,art/scenes}` before writing any files; `art/` is a dndig project (see [Image Generation with dndig](#image-generation-with-dndig))
 3. **Follow the workflow:** [workflows/campaign-creation-workflow.md](workflows/campaign-creation-workflow.md)
 4. **Use AskUserQuestion** to gather requirements if not provided
@@ -25,7 +25,7 @@ lorewright is a specialized skill designed to assist Dungeon Masters and creativ
 1. **Read existing content** before making changes
 2. **Follow the iteration workflow:** [workflows/iteration-workflow.md](workflows/iteration-workflow.md)
 3. **Check consistency:** Use [checklists/consistency-checklist.md](checklists/consistency-checklist.md)
-4. **Use Edit tool** for targeted changes to existing files
+4. **Make targeted edits** to existing files rather than rewriting them
 
 ### Need an Example?
 
@@ -74,12 +74,7 @@ This skill helps you create:
 - Keep names and facts consistent
 - Check dependencies when changing content
 
-### Use the Right Tools
-- **TaskCreate/TaskUpdate:** Track complex campaign creation tasks
-- **AskUserQuestion:** Clarify requirements and gather preferences
-- **Read:** Always read existing files before editing
-- **Edit:** Make targeted changes to existing content
-- **Write:** Create new files from templates
+### Artwork
 - **dndig:** Generate campaign artwork (see [dndig-reference.md](modules/dndig-reference.md))
 
 ---
@@ -205,11 +200,10 @@ references/
 ### Creating a New Campaign
 
 **Phase 1: Gather Requirements**
-1. Use TaskCreate to build a planning checklist
-2. Use AskUserQuestion if briefing incomplete
-3. Collect: story idea, length, level, setting, tone
-4. If adapting source material, follow [literary-adaptation.md](modules/literary-adaptation.md)
-5. Complete [campaign-research-checklist.md](checklists/campaign-research-checklist.md)
+1. Use AskUserQuestion if briefing incomplete
+2. Collect: story idea, length, level, setting, tone
+3. If adapting source material, follow [literary-adaptation.md](modules/literary-adaptation.md)
+4. Complete [campaign-research-checklist.md](checklists/campaign-research-checklist.md)
 
 **Phase 2: Campaign Framework** 
 1. Choose campaign type (see [modules/campaign-types.md](modules/campaign-types.md))
@@ -227,7 +221,7 @@ references/
 
 **Phase 4: Player-Facing Content** 
 1. Write README.md (use [template](templates/README.md))
-2. Ensure there are NO SPOILERS in the briefing
+2. Keep it spoiler-free: the players read it
 
 **Phase 5: Polish & QA** 
 1. Create image prompts for key scenes using [dndig-reference.md](modules/dndig-reference.md)
@@ -248,71 +242,15 @@ references/
 
 ---
 
-## Important Guidelines
+## Artwork Integration
 
-### Always Do This
-
-**Use TaskCreate/TaskUpdate for Complex Tasks**
-- Create planning checklist immediately with TaskCreate
-- Track progress through creation phases
-- Mark tasks completed with TaskUpdate as you finish them
-- Keep exactly ONE task in_progress at a time
-
-**Ask Questions When Needed**
-- Use AskUserQuestion for unclear requirements
-- Clarify tone, content boundaries, player preferences
-- Ask about multiple valid approaches
-- Don't guess—confirm with the DM
-
-**Read Before Editing**
-- Always Read existing files before using Edit
-- Understand the full context
-- Check dependencies and cross-references
-- Maintain consistency with existing content
-
-**Preserve Player Agency**
-- Provide multiple solutions to every problem
-- Design meaningful consequences
-- Allow creative approaches
-- Avoid forced single paths
-
-**Follow Templates**
-- Use the templates in [templates/](templates/)
-- Maintain consistent formatting
-- Include all required sections
-- Match the style of examples
-
-**Integrate All Artwork into Content**
 - Every art prompt `art/<folder>/<title>.md` must have a matching `![...](art/<folder>/images/<title>.jpg)` reference in the campaign text
 - Every image reference in chapters, npcs.md, or locations.md must have a matching art prompt
 - Place NPC portraits after appearance descriptions, scene images after read-aloud text
 - Image paths are fixed by folder and title, so write them when you write the prompts — they need no update after generation
 - See [formatting-conventions.md](modules/formatting-conventions.md#image-integration) for placement rules
 
-### Never Do This
-
-**Don't Railroad Players**
-- Never force a single solution
-- Don't invalidate player choices
-- Avoid "the NPC does everything" solutions
-
-**Don't Skip Quality Checks**
-- Always use checklists before completion
-- Verify cross-references work
-- Check name consistency
-- Test story logic
-
-**Don't Forget Documentation**
-- Cross-reference between documents
-- Link to related content
-- Include DM notes and tips
-- Provide stat blocks or references
-
-**Don't Break Existing Content**
-- When editing, maintain story logic
-- Update all references to changed content
-- Check timeline consistency
-- Preserve what works
+Ask the DM about tone, content boundaries and player preferences when the brief doesn't settle them, rather than guessing.
 
 ---
 
@@ -484,23 +422,6 @@ dndig generate characters/ locations/ scenes/ --auto-pick
 ---
 
 ## Examples in Action
-
-### Example: Starting a New Campaign
-
-```
-DM: "I want to create a 3-session campaign about smugglers in a port city"
-
-You:
-1. TaskCreate: Create planning checklist
-2. AskUserQuestion: Clarify tone, starting level, player count
-3. Choose campaign type: Sandbox (city hub with multiple quest lines)
-4. Create campaign-overview.md from template
-5. Create 3 chapters, npcs.md, locations.md
-6. Create README.md for players
-7. Run quality checklist
-8. Write the dndig art project (`art/`) and its README; generate the images with dndig if `GEMINI_API_KEY` is set
-9. Deliver organized campaign
-```
 
 ### Example: Updating Existing Campaign
 
